@@ -22,7 +22,7 @@ app.delete('/notes/:index', (req, res) => {
     if (isNaN(Number(req.params.index))) return res.send("Invalid URL")
 
     const index = req.params.index
-    if (index <= notes.length) {
+    if (index < notes.length) {
         if (notes[index] == null) res.send(`Notes with index ${index} is already deleted`)
         res.send(`${notes[index].title} deleted successfully`)
         delete notes[index]
@@ -36,7 +36,7 @@ app.patch('/notes/:index', (req, res) => {
     if (isNaN(Number(req.params.index))) return res.send("Invalid URL")
 
     const index = req.params.index
-    if (index <= notes.length) {
+    if (index < notes.length) {
         notes[index].description = req.body.description
         res.send(notes)
     }
