@@ -1,0 +1,41 @@
+.note {
+    border: 1px solid var(--card-border);
+    border-radius: var(--card-radius);
+    padding: var(--card-padding);
+    min-width: var(--card-width);
+    min-height: var(--card-min-height);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    flex: 1;
+}
+
+.note h3 {
+    margin: 0 0 0.5rem 0;
+    font-size: var(--font-size-base);
+    font-weight: 500;
+    width: 100%;
+    word-break: break-word;
+}
+
+.note p {
+    margin: 0;
+    font-size: var(--font-size-sm);
+    color: var(--text-muted);
+    word-break: break-word;
+}
+
+.note i {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+}
+
+.note:hover i {
+    opacity: 1;
+    pointer-events:all;
+    cursor: pointer;
+}
