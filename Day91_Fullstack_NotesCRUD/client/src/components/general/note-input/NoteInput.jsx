@@ -1,6 +1,6 @@
 import React, { useContext, useState } from 'react'
 import { NotesDataContext } from '../../../context/NotesContext'
-import axios from 'axios'
+import api from '../../../api/axiosInstance'
 import './note-input.css'
 
 const NoteInput = () => {
@@ -13,7 +13,7 @@ const NoteInput = () => {
         e.preventDefault()
         const { title, description } = e.target.elements
 
-        axios.post('http://localhost:3000/api/notes', {
+        api.post('/api/notes', {
             title: title.value,
             description: description.value
         }).then(res => {

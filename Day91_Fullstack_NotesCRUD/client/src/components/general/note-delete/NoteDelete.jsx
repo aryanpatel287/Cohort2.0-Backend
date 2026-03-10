@@ -1,7 +1,7 @@
 import React from 'react'
 import { useContext } from 'react'
 import { NotesDataContext } from '../../../context/NotesContext'
-import axios from 'axios'
+import api from '../../../api/axiosInstance'
 import fetchNotes from '../../../api/NotesApi'
 
 const NoteDelete = ({ noteId }) => {
@@ -9,7 +9,7 @@ const NoteDelete = ({ noteId }) => {
 
     function handleDelete(noteId) {
         console.log(noteId)
-        axios.delete("http://localhost:3000/api/notes/" + noteId)
+        api.delete('/api/notes/' + noteId)
             .then(async () => {
                 const updatedNotes = await fetchNotes()
                 setNotes(updatedNotes)

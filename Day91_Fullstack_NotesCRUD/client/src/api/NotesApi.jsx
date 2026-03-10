@@ -1,8 +1,8 @@
-import axios from "axios"
+import api from "./axiosInstance"
 
 export default async function fetchNotes() {
     try {
-        const res = await axios.get('http://localhost:3000/api/notes')
+        const res = await api.get('/api/notes')
         return res.data.notes
     } catch (error) {
         console.error('Error fetching notes', error)
