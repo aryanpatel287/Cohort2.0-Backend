@@ -1,6 +1,6 @@
 import React, { useState, useContext } from 'react'
 import './note-modal.css'
-import axios from 'axios'
+import api from '../../../api/axiosInstance'
 import { NotesDataContext } from '../../../context/NotesContext'
 
 const NoteModal = ({ note }) => {
@@ -11,7 +11,7 @@ const NoteModal = ({ note }) => {
     function handleUpdate(e) {
         e.preventDefault()
 
-        axios.patch(`http://localhost:3000/api/notes/${note._id}`, {
+        api.patch(`/api/notes/${note._id}`, {
             title: titleInput,
             description: descriptionInput
         }).then(async (res) => {
