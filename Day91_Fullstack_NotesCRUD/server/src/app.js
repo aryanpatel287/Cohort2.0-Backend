@@ -2,9 +2,12 @@ const express = require('express')
 const cors = require('cors')
 const app = express()
 const noteModel = require('../models/note.module')
+const path =  require('path')
 
 app.use(express.json())
 app.use(cors())
+app.use(express.static("./public"))
+
 // POST /notes
 app.post("/api/notes", async (req, res) => {
     const { title, description } = req.body
@@ -60,4 +63,10 @@ app.patch("/api/notes/:id", async (req, res) => {
         updatedNote
     })
 })
+
+//Wild card
+app.get("*name",(req,res)=>{
+    res.sendFile(path.join(__dirname,"..","/public/index.html"))
+})
+
 module.exports = app
