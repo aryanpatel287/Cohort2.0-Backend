@@ -7,7 +7,6 @@ import fetchNotes from '../../../api/NotesApi'
 const NoteDelete = ({ noteId }) => {
     const { notes, setNotes } = useContext(NotesDataContext)
 
-
     function handleDelete(noteId) {
         console.log(noteId)
         axios.delete("http://localhost:3000/api/notes/" + noteId)
