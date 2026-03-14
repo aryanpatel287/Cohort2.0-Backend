@@ -33,9 +33,13 @@ authRouter.post('/register', async (req, res) => {
 
 })
 
-authRouter.post('/protected', (req, res) => {
+authRouter.post('/protected', async(req, res) => {
     console.log(req.cookies)
-
+    const token = req.cookies.jwt_token
+    const decodedUser = jwt.verify(token, process.env.JWT_SECRET)
+    const userId = decodedUser._id
+    const user = await userModel.findOne({ userId })
+    console.log(user)
     res.status(200).json({
         message: "cookies fetched"
     })
@@ -60,11 +64,22 @@ authRouter.post('/login', async (req, res) => {
     }
 
     const token = jwt.sign({ userId: user._id }, process.env.JWT_SECRET)
-
+    res.cookie("jwt_token", token)
     res.status(200).json({
         message: "user logged in successfully",
         user
     })
 })
 
+authRouter.get('/get-me', async (req, res) => {
+    const token = req.cookies.jwt_token
+    const decodedUser = jwt.verify(token, process.env.JWT_SECRET)
+    const userId = decodedUser._id
+    const user = await userModel.findOne({ userId })
+    
+    res.status(200).json({
+        message:"User authenticated successfully",
+        userEmail : user.userEmail
+    })
+})
 module.exports = authRouter
