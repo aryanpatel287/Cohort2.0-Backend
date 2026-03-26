@@ -1,5 +1,4 @@
 const postModel = require('../models/post.model')
-const jwt = require('jsonwebtoken')
 const ImageKit = require('@imagekit/nodejs')
 const { toFile } = require('@imagekit/nodejs')
 
@@ -8,24 +7,6 @@ const imagekit = new ImageKit({
 })
 
 async function createPostController(req, res) {
-    console.log(req.body, req.file)
-
-    const token = req.cookies.token
-
-    if (!token) {
-        return res.status(401).json({
-            message: "user is not authorized"
-        })
-    }
-
-    let decodedToken = null
-    try {
-        decodedToken = jwt.verify(token, process.env.JWT_SECRET)
-    } catch (error) {
-        return res.status(401).json({
-            message: "user is not authorized"
-        })
-    }
 
     const file = await imagekit.files.upload({
         file: await toFile(Buffer.from(req.file.buffer), 'file'),
@@ -36,7 +17,7 @@ async function createPostController(req, res) {
     const post = await postModel.create({
         caption: req.body.caption,
         imageUrl: file.url,
-        user: decodedToken.userId
+        user: req.user
     })
 
     res.status(200).json({
@@ -49,23 +30,8 @@ async function createPostController(req, res) {
 }
 
 async function getPostController(req, res) {
-    const token = req.cookies.token;
-    if (!token) {
-        return res.status(401).json({
-            message: "unauthorized access"
-        })
-    }
 
-    let decodedToken = null;
-    try {
-        decodedToken = await jwt.verify(token, process.env.JWT_SECRET)
-    } catch (error) {
-        return res.status(401).json({
-            message: "invalid token"
-        })
-    }
-
-    const userId = decodedToken.userId
+    const userId = req.user
     const posts = await postModel.find({ user: userId })
 
     res.status(200).json({
@@ -75,23 +41,8 @@ async function getPostController(req, res) {
 }
 
 async function getPostDetailsController(req, res) {
-    const token = req.cookies.token
-    if (!token) {
-        return res.status(401).json({
-            message: "unauthorized accesss"
-        })
-    }
 
-    let decodedToken = null
-    try {
-        decodedToken = jwt.verify(token, process.env.JWT_SECRET)
-    } catch (error) {
-        return res.status(401).json({
-            message: "invalid token"
-        })
-    }
-
-    const userId = decodedToken.userId;
+    const userId = req.user;
     const postId = req.params.postId
 
     const post = await postModel.findById(postId)
