@@ -11,10 +11,10 @@ async function followUserController(req, res) {
         })
     }
 
-    const isFolloweeExists = await userModel.findOne({ followeeUsername })
+    const isFolloweeExists = await userModel.findOne({ username: followeeUsername })
     if (!isFolloweeExists) {
         return res.status(404).json({
-            message: `you are already following ${followeeUsername}`
+            message: `user: ${followeeUsername} not found`
         })
     }
 
@@ -67,7 +67,87 @@ async function unfollowUserController(req, res) {
     })
 }
 
+async function acceptFollowStatusController(req, res) {
+    const followRecordId = req.params.followRecordId
+
+    const followRecord = await followModel.findById(followRecordId)
+
+    if (!followRecord) {
+        return res.status(404).json({
+            message: "follow request not found"
+        })
+    }
+
+    if (followRecord.status == "rejected") {
+        return res.status(400).json({
+            message: "cannot accept, follow request is already rejected"
+        })
+    }
+
+    if (followRecord.status == "accepted") {
+        return res.status(200).json({
+            message: "follow request is already accepted"
+        })
+    }
+
+    const newFollowRecord = await followModel.findByIdAndUpdate(
+        followRecordId,
+        { $set: { 'status': 'accepted' } },
+        { new: true }
+    )
+
+    res.status(200).json({
+        message: "follow request accepted",
+        newFollowRecord: {
+            follower: newFollowRecord.follower,
+            followee: newFollowRecord.followee,
+            status: newFollowRecord.status
+        }
+    })
+}
+
+async function rejectFollowStatusController(req, res) {
+    const followRecordId = req.params.followRecordId
+
+    const followRecord = await followModel.findById(followRecordId)
+
+    if (!followRecord) {
+        return res.status(404).json({
+            message: "follow request not found"
+        })
+    }
+
+    if (followRecord.status == "accepted") {
+        return res.status(400).json({
+            message: "cannot reject, follow request is already accepted"
+        })
+    }
+
+    if (followRecord.status == "rejected") {
+        return res.status(200).json({
+            message: "follow request is already rejected"
+        })
+    }
+
+    const newFollowRecord = await followModel.findByIdAndUpdate(
+        followRecordId,
+        { $set: { 'status': 'rejected' } },
+        { new: true }
+    )
+
+    res.status(200).json({
+        message: "request rejected successfully",
+        newFollowRecord: {
+            follower: newFollowRecord.follower,
+            followee: newFollowRecord.followee,
+            status: newFollowRecord.status
+        }
+    })
+}
+
 module.exports = {
     followUserController,
-    unfollowUserController
+    unfollowUserController,
+    acceptFollowStatusController,
+    rejectFollowStatusController
 }
