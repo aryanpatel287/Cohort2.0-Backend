@@ -17,8 +17,10 @@ async function identifyUser(req, res, next) {
             message: "user is not authorized"
         })
     }
-
-    req.user = decodedToken.userId
+    req.user = {
+        id: decodedToken.userId,
+        username: decodedToken.username
+    }
 
     next()
 }
