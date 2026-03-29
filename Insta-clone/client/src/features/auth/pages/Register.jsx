@@ -23,7 +23,10 @@ const Register = () => {
         e.preventDefault()
 
         handleRegister(username, email, password)
+        handleRegister(username, email, password)
             .then(res => {
+                console.log(res)
+                navigate("/")
                 console.log(res)
                 navigate("/")
             })
