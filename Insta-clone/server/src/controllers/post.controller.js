@@ -31,13 +31,13 @@ async function createPostController(req, res) {
     })
 }
 
-async function getPostController(req, res) {
+async function getPostsController(req, res) {
 
     const userId = req.user.id
     const posts = await postModel.find({ user: userId })
 
     res.status(200).json({
-        message: "posts getched successfuly",
+        message: "posts fetched successfuly",
         posts
     })
 }
@@ -100,9 +100,36 @@ async function likePostController(req, res) {
         message: "liked post successfully"
     })
 }
+
+async function getFeedController(req, res) {
+    const user = req.user.username
+
+    const posts = await Promise.all((await postModel.find().populate("user").lean())
+        .map(async (post) => {
+            const isLiked = await likeModel.findOne({
+                user: user,
+                post: post._id
+            })
+
+            const likeCount = await likeModel.countDocuments({
+                post: post._id
+            })
+
+            post.isLiked = !!isLiked
+            post.likeCount = likeCount
+            
+            return post
+        }))
+
+    res.status(200).json({
+        message: "all posts fetched successfully",
+        posts
+    })
+}
 module.exports = {
     createPostController,
-    getPostController,
+    getPostsController,
     getPostDetailsController,
-    likePostController
+    likePostController,
+    getFeedController
 }

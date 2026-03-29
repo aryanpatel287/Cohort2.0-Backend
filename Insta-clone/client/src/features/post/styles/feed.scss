@@ -1,0 +1,23 @@
+//Imports
+
+@use "../../shared/mixins" as *;
+@use "./post.scss";
+
+
+//Feed Styles
+
+ .feed-page {
+  margin-top: 2rem;
+  width: 100%;
+  @include displayFlex($align: start, $justify: center);
+
+  .feed {
+    max-width: 350px;
+    @include displayFlex($justify: center);
+
+    .posts {
+      width: 100%;
+      @include displayFlex($justify: center, $direction: column, $gap: 2rem);
+    }
+  }
+}

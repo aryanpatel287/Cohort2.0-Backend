@@ -12,12 +12,14 @@ const identifyUser = require('../middlewares/auth.middleware')
  */
 postRoutes.post('/', identifyUser, upload.single("image"), postController.createPostController)
 
+
 /**
  * @route GET /api/posts/
  * @description Get all posts created by user
  * @access Private
  */
-postRoutes.get('/', identifyUser, postController.getPostController)
+postRoutes.get('/', identifyUser, postController.getPostsController)
+
 
 /**
  * @route GET /api/posts/details/:postId
@@ -26,11 +28,20 @@ postRoutes.get('/', identifyUser, postController.getPostController)
  */
 postRoutes.get('/details/:postId', identifyUser, postController.getPostDetailsController)
 
+
 /**
  * @route POST /api/posts/like/:postId
  * @description Like a post by using postId 
  * @access Private
  */
 postRoutes.post('/like/:postId', identifyUser, postController.likePostController)
+
+
+/**
+ * @route POST /api/posts/feed
+ * @description Get all existing posts in the database 
+ * @access Private
+ */
+postRoutes.get('/feed', identifyUser, postController.getFeedController)
 
 module.exports = postRoutes
