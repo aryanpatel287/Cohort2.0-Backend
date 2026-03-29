@@ -13,7 +13,7 @@ const Register = () => {
     const { handleRegister, loading } = useAuth()
     const navigate = useNavigate()
 
-    if(loading){
+    if (loading) {
         return (
             <h1>Loading...</h1>
         )
@@ -22,14 +22,8 @@ const Register = () => {
     async function handleFormSubmit(e) {
         e.preventDefault()
 
-        handleRegister(username, email, password)
-        handleRegister(username, email, password)
-            .then(res => {
-                console.log(res)
-                navigate("/")
-                console.log(res)
-                navigate("/")
-            })
+        await handleRegister(username, email, password)
+        navigate("/")
     }
 
     return (
@@ -61,7 +55,7 @@ const Register = () => {
                         id="password"
                         placeholder='Password'
                         required />
-                    <button type="submit">Submit</button>
+                    <button type="submit" className='button primary-button'>Submit</button>
                 </form>
                 <p> Already have an account?  <Link className='toggle-auth-form' to="/login" >Login</Link> </p>
 
