@@ -5,7 +5,7 @@ async function identifyUser(req, res, next) {
 
     if (!token) {
         return res.status(401).json({
-            message: "user is not authorized"
+            message: "token not provided, user is not authorized"
         })
     }
 

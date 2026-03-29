@@ -35,21 +35,24 @@ const Register = () => {
                         type="text"
                         name="userName"
                         id="userName"
-                        placeholder='Username' />
+                        placeholder='Username'
+                        required />
                     <input
                         onInput={(e) => { setEmail(e.target.value) }}
                         value={email}
                         type="email"
                         name="email"
                         id="email"
-                        placeholder='Email' />
+                        placeholder='Email'
+                        required />
                     <input
                         onInput={(e) => { setPassword(e.target.value) }}
                         value={password}
                         type="password"
                         name="password"
                         id="password"
-                        placeholder='Password' />
+                        placeholder='Password'
+                        required />
                     <button type="submit">Submit</button>
                 </form>
                 <p> Already have an account?  <Link className='toggle-auth-form' to="/login" >Login</Link> </p>
