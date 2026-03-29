@@ -29,6 +29,7 @@ export function AuthProvider({ children }) {
         try {
             const response = await register(username, email, password)
             setUser(response.data)
+            return response.user
         } catch (error) {
             console.log(error)
         } finally {
