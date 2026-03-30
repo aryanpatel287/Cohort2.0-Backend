@@ -5,7 +5,7 @@ import { usePost } from '../hooks/usePost';
 
 const Feed = () => {
 
-    const { feed, handleGetFeed, loading } = usePost()
+    const { feed, handleGetFeed, loading, handleLikePost, handleUnLikePost } = usePost()
 
     useEffect(() => {
         handleGetFeed()
@@ -16,15 +16,15 @@ const Feed = () => {
     }
     console.log(feed)
     return (
-        <main className="feed-page">
+        <div className="feed-page">
             <div className="feed">
                 <div className="posts">
                     {feed.map((post) => {
-                        return <Post user={post.user} post={post} />
+                        return <Post user={post.user} post={post} loading={loading} handleLikePost={handleLikePost} handleUnLikePost={handleUnLikePost} />
                     })}
                 </div>
             </div>
-        </main>
+        </div>
     )
 }
 

@@ -1,6 +1,6 @@
 import React from 'react'
 import AppRoutes from './AppRoutes'
-import './features/shared/global.scss'
+import './features/shared/styles/global.scss'
 import { RouterProvider } from 'react-router'
 import { AuthProvider } from './features/auth/auth.context.jsx'
 import { router } from './app.routes.jsx'

@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Post = ({ user, post }) => {
+const Post = ({ user, post, loading, handleLikePost, handleUnLikePost }) => {
     return (
         <div className="post">
             <div className="user-details-wrapper">
@@ -15,7 +15,7 @@ const Post = ({ user, post }) => {
             <div className="post-actions-wrapper">
                 <div className="left">
                     <button type="button" aria-label="Like post" className={post.isLiked ? "liked action-with-count" : "action-with-count"}>
-                        <i className={post.isLiked ? "ri-heart-fill" : "ri-heart-line"}></i>
+                        <i onClick={() => { post.isLiked ? handleUnLikePost(post._id) : handleLikePost(post._id) }} className={post.isLiked ? "ri-heart-fill" : "ri-heart-line"}></i>
                         <span className="action-count">{post.likeCount}</span>
                     </button>
                     <button type="button" aria-label="Open comments" className="action-with-count">

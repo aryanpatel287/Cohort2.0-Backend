@@ -1,13 +1,12 @@
 //Imports
 
-@use "../../shared/mixins" as *;
+@use "../../shared/styles/mixins" as *;
 @use "./post.scss";
 
 
 //Feed Styles
 
  .feed-page {
-  margin-top: 2rem;
   width: 100%;
   @include displayFlex($align: start, $justify: center);
 

@@ -1,0 +1,16 @@
+@use "./mixins" as *;
+
+.navbar-wrapper {
+  max-width: 450px;
+  width: 100%;
+  @include displayFlex($align: center, $justify: space-between);
+
+  .logo {
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+
+  .button.create-post {
+    width: 10%;
+  }
+}

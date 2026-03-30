@@ -1,0 +1,7 @@
+@use "./mixins" as *;
+main {
+  width: 100%;
+  height: 100%;
+  padding: 1rem;
+  @include displayFlex($align: center, $direction: column, $gap: 1.5rem);
+}

@@ -38,6 +38,14 @@ postRoutes.post('/like/:postId', identifyUser, postController.likePostController
 
 
 /**
+ * @route POST /api/posts/unlike/:postId
+ * @description Like a post by using postId 
+ * @access Private
+ */
+postRoutes.post('/unlike/:postId', identifyUser, postController.unlikePostController)
+
+
+/**
  * @route POST /api/posts/feed
  * @description Get all existing posts in the database 
  * @access Private
