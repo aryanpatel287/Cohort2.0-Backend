@@ -1,0 +1,23 @@
+@use "../../shared/styles/mixins" as *;
+
+.user-list-card-wrapper {
+  @include displayFlex(
+    $align: center,
+    $direction: row,
+    $gap: 1.5rem,
+    $justify: space-between
+  );
+  cursor: pointer;
+
+  .user-details {
+    @include displayFlex($align: center, $direction: row, $gap: 1rem);
+
+    img {
+      width: 2rem;
+      height: 2rem;
+      object-fit: cover;
+      display: block;
+      border-radius: 50%;
+    }
+  }
+}

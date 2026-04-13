@@ -5,6 +5,8 @@ import { RouterProvider } from 'react-router'
 import { AuthProvider } from './features/auth/auth.context.jsx'
 import { router } from './app.routes.jsx'
 import { PostContextProvider } from './features/post/post.context.jsx'
+import { UserProvider } from './features/user/user.context.jsx'
+import { FollowProvider } from './features/follow/follow.context.jsx'
 
 const App = () => {
   return (
@@ -20,9 +22,13 @@ const App = () => {
      * Another way to implement routes by app.routes.jsx
      */
     <AuthProvider>
-      <PostContextProvider>
-        <RouterProvider router={router} />
-      </PostContextProvider>
+      <UserProvider>
+        <FollowProvider>
+          <PostContextProvider>
+            <RouterProvider router={router} />
+          </PostContextProvider>
+        </FollowProvider>
+      </UserProvider>
     </AuthProvider>
   )
 }

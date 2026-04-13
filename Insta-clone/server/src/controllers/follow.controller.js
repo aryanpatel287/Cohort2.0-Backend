@@ -2,72 +2,96 @@ const followModel = require('../models/follow.model')
 const userModel = require('../models/user.model')
 
 async function followUserController(req, res) {
-    const followerUsername = req.user.username
-    const followeeUsername = req.params.username
+    const followerUserId = req.user.id
+    const followeeUserId = req.params.userId
 
-    if (followerUsername == followeeUsername) {
+    if (followerUserId == followeeUserId) {
         return res.status(400).json({
             message: "follower and followee cannot be same"
         })
     }
 
-    const isFolloweeExists = await userModel.findOne({ username: followeeUsername })
+    const isFolloweeExists = await userModel.findById(followeeUserId)
     if (!isFolloweeExists) {
         return res.status(404).json({
-            message: `user: ${followeeUsername} not found`
+            message: `user: ${followeeUserId} not found`
         })
     }
 
     const isAlreadyFollowing = await followModel.findOne({
-        follower: followerUsername,
-        followee: followeeUsername
+        follower: followerUserId,
+        followee: followeeUserId
     })
-    if (isAlreadyFollowing) {
+    if (isAlreadyFollowing && (isAlreadyFollowing.status === "accepted" || isAlreadyFollowing.status === "pending")) {
         return res.status(200).json({
-            message: `you are already following ${followeeUsername}`
+            message: `follow request already sent to ${followeeUserId}`,
+            followStatus: isAlreadyFollowing.status,
+            followRecord: isAlreadyFollowing
+        })
+    }
+
+    if (isAlreadyFollowing && (isAlreadyFollowing.status === "rejected")) {
+        const newFollowRecord = await followModel.findByIdAndUpdate(
+            isAlreadyFollowing._id,
+            { $set: { 'status': 'pending' } },
+            { new: true }
+        )
+
+        return res.status(200).json({
+            message: "follow request sent successfully",
+            newFollowRecord
         })
     }
 
     const followRecord = await followModel.create({
-        follower: followerUsername,
-        followee: followeeUsername
+        follower: followerUserId,
+        followee: followeeUserId
     })
 
     res.status(200).json({
-        message: `you are now following ${followRecord.followee}`,
+        message: `Follow request sent to ${followRecord.followee}`,
         followRecord
     })
 }
 
 async function unfollowUserController(req, res) {
-    const followerUsername = req.user.username
-    const followeeUsername = req.params.username
+    const followerUserId = req.user.id
+    const followeeUserId = req.params.userId
 
-    if (followerUsername == followeeUsername) {
+    if (followerUserId == followeeUserId) {
         return res.status(400).json({
             message: "follower and followee cannot be same"
         })
     }
 
     const followRecord = await followModel.findOne({
-        follower: followerUsername,
-        followee: followeeUsername
+        follower: followerUserId,
+        followee: followeeUserId
     })
 
     if (!followRecord) {
         return res.status(200).json({
-            message: `you are not following ${followeeUsername}`
+            message: `you are not following ${followeeUserId}`
+        })
+    }
+
+    //Implement soft delete later on
+
+    if (followRecord.status !== "accepted") {
+        return res.status(400).json({
+            message: "to unfollow, the follow request must be accepted"
         })
     }
 
     await followModel.findByIdAndDelete(followRecord._id)
 
     res.status(200).json({
-        message: `you have unfollowed ${followeeUsername}`
+        message: `you have unfollowed ${followeeUserId}`
     })
 }
 
 async function acceptFollowStatusController(req, res) {
+    const userId = req.user.id
     const followRecordId = req.params.followRecordId
 
     const followRecord = await followModel.findById(followRecordId)
@@ -75,6 +99,12 @@ async function acceptFollowStatusController(req, res) {
     if (!followRecord) {
         return res.status(404).json({
             message: "follow request not found"
+        })
+    }
+
+    if (!followRecord.followee.equals(userId)) {
+        return res.status(403).json({
+            message: "you are not allowed to accept this follow request"
         })
     }
 
@@ -107,6 +137,7 @@ async function acceptFollowStatusController(req, res) {
 }
 
 async function rejectFollowStatusController(req, res) {
+    const userId = req.user.id
     const followRecordId = req.params.followRecordId
 
     const followRecord = await followModel.findById(followRecordId)
@@ -114,6 +145,12 @@ async function rejectFollowStatusController(req, res) {
     if (!followRecord) {
         return res.status(404).json({
             message: "follow request not found"
+        })
+    }
+
+    if (followRecord.followee !== userId) {
+        return res.status(403).json({
+            message: "you are not allowed to accept this follow request"
         })
     }
 
@@ -145,9 +182,39 @@ async function rejectFollowStatusController(req, res) {
     })
 }
 
+async function allFollowRecordsController(req, res) {
+    const followerUserId = req.user.id
+
+    const followingRecords = await followModel.find({ follower: followerUserId }).populate("followee").lean()
+    const followerRecords = await followModel.find({ followee: followerUserId }).populate("follower").lean()
+
+    const allFollowRecords = {
+        followingRecords,
+        followerRecords
+    }
+
+    res.status(200).json({
+        message: "all followee fetched successfully",
+        allFollowRecords
+    })
+}
+
+async function allFollowRequestController(req, res) {
+    const followeeUserId = req.user.id
+
+    const allFollowRecords = await followModel.find({ followee: followeeUserId }).populate("follower").lean()
+
+    res.status(200).json({
+        message: "all follow requests fetched successfully",
+        allFollowRequests: allFollowRecords
+    })
+}
+
 module.exports = {
     followUserController,
     unfollowUserController,
     acceptFollowStatusController,
-    rejectFollowStatusController
+    rejectFollowStatusController,
+    allFollowRecordsController,
+    allFollowRequestController
 }

@@ -2,8 +2,7 @@
   padding: 0.5rem 1rem;
   border-radius: 10px;
   font-weight: 400;
-  min-width: 200px;
-  width: 60%;
+  width: fit-content;
   border: none;
   transition: 0.3s all ease;
   cursor: pointer;
@@ -11,6 +10,28 @@
   &.primary-button {
     background-color: #e33434;
     color: whitesmoke;
+  }
+
+  &.secondary-button {
+    background-color: #1a2027;
+    color: #d8dee6;
+    border: 1px solid #2f3946;
+
+    &:hover {
+      background-color: #222b35;
+      color: #eef2f6;
+      border-color: #3a4655;
+    }
+  }
+
+  &.small-button {
+    padding: 0.25rem 0.5rem;
+    font-size: 0.7rem;
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+    opacity: 0.7;
   }
 
   &:active {

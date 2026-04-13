@@ -14,7 +14,7 @@ const Feed = () => {
     if (loading || !feed) {
         return <main className="feed-page"><h1>Feed loading...</h1></main>
     }
-    console.log(feed)
+    
     return (
         <div className="feed-page">
             <div className="feed">

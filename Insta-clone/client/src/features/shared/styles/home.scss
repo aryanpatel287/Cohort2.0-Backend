@@ -3,5 +3,44 @@ main {
   width: 100%;
   height: 100%;
   padding: 1rem;
-  @include displayFlex($align: center, $direction: column, $gap: 1.5rem);
+  @include displayFlex($align: center, $direction: row, $gap: 1.5rem);
+
+  .left-side {
+    width: 25%;
+    height: 100%;
+    @include displayFlex($align: center, $direction: column, $gap: 1.5rem);
+
+    .following-list-wrapper {
+      width: 100%;
+      height: 50%;
+      @include displayFlex($align: center, $direction: column, $gap: 1.5rem);
+    }
+
+    .followers-list-wrapper {
+      width: 100%;
+      height: 50%;
+      @include displayFlex($align: center, $direction: column, $gap: 1.5rem);
+    }
+  }
+  .middle {
+    height: 100%;
+    width: 50%;
+    @include displayFlex($align: center, $direction: column, $gap: 1.5rem);
+  }
+  .right-side {
+    height: 100%;
+    width: 25%;
+
+    .follow-request-list-wrapper {
+      width: 100%;
+      height: 50%;
+      @include displayFlex($align: center, $direction: column, $gap: 1.5rem);
+    }
+
+    .otherUsers-list-wrapper {
+      width: 100%;
+      height: 50%;
+      @include displayFlex($align: center, $direction: column, $gap: 1.5rem);
+    }
+  }
 }

@@ -1,29 +1,27 @@
 const express = require('express')
-const authRoutes = express.Router()
-const authController = require('../controllers/auth.controller')
+const userRoutes = express.Router()
+const userController = require('../controllers/user.controller')
 const identifyUser = require('../middlewares/auth.middleware')
 
 /**
- * @route POST /api/auth/register
- * @description register a user
- * @access Public
- */
-authRoutes.post('/register', authController.registerController)
-
-
-/**
- * @route POST /api/auth/login
- * @description login a user
- * @access Public
- */
-authRoutes.post('/login', authController.loginController)
-
-
-/**
- * @route GET /api/auth/get-me
+ * @route GET /api/user/get-me
  * @description get details of the logged in user
  * @access Private
  */
-authRoutes.get('/get-me', identifyUser, authController.getMeController)
+userRoutes.get('/get-me', identifyUser, userController.getMeController)
 
-module.exports = authRoutes
+/**
+ * @route GET /api/users
+ * @description get all users
+ * @access Private
+ */
+userRoutes.get('/', identifyUser, userController.getAllUsersController)
+
+/**
+ * @route GET /api/user/get-user/:username
+ * @description get details of the requested user
+ * @access Private
+ */
+userRoutes.get('/get-user/:username', identifyUser, userController.getUserController)
+
+module.exports = userRoutes

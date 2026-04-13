@@ -2,7 +2,6 @@
 
 @use "../../shared/styles/mixins" as *;
 
-
 //Post Styles
 
 .post {
@@ -30,6 +29,10 @@
         display: block;
         border-radius: 50%;
       }
+    }
+
+    .username {
+      cursor: pointer;
     }
   }
 

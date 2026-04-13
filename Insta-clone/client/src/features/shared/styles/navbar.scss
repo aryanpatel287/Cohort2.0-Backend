@@ -8,9 +8,15 @@
   .logo {
     font-size: 1.5rem;
     font-weight: 600;
+    cursor: default;
   }
 
-  .button.create-post {
-    width: 10%;
+  .navbar-actions {
+    @include displayFlex($align: center, $gap: 0.75rem);
+
+    .button.create-post {
+      min-width: 120px;
+      width: auto;
+    }
   }
 }

@@ -15,7 +15,6 @@ const CreatePost = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        console.log(postImageInputRef)
         const imageFile = postImageInputRef.current.files[0]
         handleCreatePost(imageFile, caption)
         navigate('/')

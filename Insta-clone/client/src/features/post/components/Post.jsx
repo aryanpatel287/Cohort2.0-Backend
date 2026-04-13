@@ -1,13 +1,21 @@
 import React from 'react'
+import { useNavigate } from 'react-router'
 
 const Post = ({ user, post, loading, handleLikePost, handleUnLikePost }) => {
+
+    const navigate = useNavigate()
+
     return (
         <div className="post">
             <div className="user-details-wrapper">
                 <div className="user-image-wrapper">
                     <img src={user.profileImage} alt="user-image" className="user-image" />
                 </div>
-                <p className="user-name">{user.username}</p>
+                <p
+                    onClick={() => { navigate('/user/' + user.username) }}
+                    className="username">
+                    {user.username}
+                </p>
             </div>
             <div className="post-image-wrapper">
                 <img src={post.imageUrl} alt="post-image" className='post-image' />

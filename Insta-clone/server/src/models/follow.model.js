@@ -2,11 +2,13 @@ const mongoose = require('mongoose')
 
 const followSchema = new mongoose.Schema({
     follower: {
-        type: String,
+        type: mongoose.Schema.Types.ObjectId,
+        ref: "users",
         required: [true, "cannot follow without a followee"]
     },
     followee: {
-        type: String,
+        type: mongoose.Schema.Types.ObjectId,
+        ref: "users",
         required: [true, "cannot follow without a followee"]
     },
     status: {

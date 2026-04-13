@@ -12,12 +12,14 @@ app.use(cors({
 }))
 
 
-const authRouter = require('./routes/user.routes')
+const authRouter = require('./routes/auth.routes')
+const userRouter = require('./routes/user.routes')
 const postRouter = require('./routes/post.routes')
-const followRouter = require('./routes/follow.route')
+const followRouter = require('./routes/follow.routes')
 
 
 app.use('/api/auth', authRouter)
+app.use('/api/user', userRouter)
 app.use('/api/posts', postRouter)
 app.use('/api', followRouter)
 
