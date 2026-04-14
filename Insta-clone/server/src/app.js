@@ -5,26 +5,17 @@ const cookieParser = require('cookie-parser')
 const cors = require('cors')
 const path = require('path')
 
-const normalizeOrigin = (value) => (value || '').trim().replace(/\/$/, '')
-
-const allowedOrigins = (process.env.CLIENT_ORIGINS || 'http://localhost:5173')
+const allowedOrigins = (process.env.CLIENT_ORIGINS)
     .split(',')
-    .map((origin) => normalizeOrigin(origin))
+    .map((origin) => origin.trim())
     .filter(Boolean)
+
 
 app.use(express.json())
 app.use(cookieParser())
 app.use(cors({
     credentials: true,
-    origin: (origin, callback) => {
-        const normalizedOrigin = normalizeOrigin(origin)
-
-        if (!origin || allowedOrigins.includes(normalizedOrigin)) {
-            return callback(null, true)
-        }
-
-        return callback(new Error(`CORS blocked for origin: ${origin}`))
-    }
+    origin: allowedOrigins
 }))
 
 const clientBuildPath = path.join(__dirname, 'public')
