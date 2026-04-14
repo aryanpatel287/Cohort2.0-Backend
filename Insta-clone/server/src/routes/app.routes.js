@@ -7,6 +7,6 @@ const appController = require('../controllers/app.controller')
  * @description Redirect user to client on all non-api urls
  * @access Public
  */
-appRoutes.get(/^(?!\/api).*/, appController.redirectUserToClient)
+appRoutes.get(/^(?!\/(api|assets)\/).*/, appController.redirectUserToClient)
 
 module.exports = appRoutes

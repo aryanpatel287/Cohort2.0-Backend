@@ -5,9 +5,11 @@ const cookieParser = require('cookie-parser')
 const cors = require('cors')
 const path = require('path')
 
+const normalizeOrigin = (value) => (value || '').trim().replace(/\/$/, '')
+
 const allowedOrigins = (process.env.CLIENT_ORIGINS || 'http://localhost:5173')
     .split(',')
-    .map((origin) => origin.trim())
+    .map((origin) => normalizeOrigin(origin))
     .filter(Boolean)
 
 app.use(express.json())
@@ -15,7 +17,9 @@ app.use(cookieParser())
 app.use(cors({
     credentials: true,
     origin: (origin, callback) => {
-        if (!origin || allowedOrigins.includes(origin)) {
+        const normalizedOrigin = normalizeOrigin(origin)
+
+        if (!origin || allowedOrigins.includes(normalizedOrigin)) {
             return callback(null, true)
         }
 
