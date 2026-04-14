@@ -1,16 +1,56 @@
-# React + Vite
+# Insta-clone Client
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Frontend for Insta-clone built with React + Vite.
 
-Currently, two official plugins are available:
+## Tech Stack
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- React
+- React Router
+- Axios
+- Sass
+- Vite
 
-## React Compiler
+## Run Locally
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+```bash
+npm install
+npm run dev
+```
 
-## Expanding the ESLint configuration
+Default local URL:
+- http://localhost:5173
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+To expose on LAN:
+
+```bash
+npm run dev -- --host
+```
+
+## Build
+
+```bash
+npm run build
+npm run preview
+```
+
+## Key Client Features
+
+- Authentication screens and session-aware UI
+- Feed, post creation, like/unlike
+- Profile pages with follow status
+- Followers, following, and follow requests panels
+- Responsive desktop + mobile navigation/panels
+
+## Project Conventions
+
+- Shared UI styles are in [src/features/shared/styles](src/features/shared/styles).
+- Feature-specific styles are colocated in each feature folder.
+- Follow app-wide styling rules from [../STYLING_RULES.md](../STYLING_RULES.md).
+
+## API Docs
+
+Use [../API_RESPONSES.md](../API_RESPONSES.md) for response examples and endpoint references.
+
+## Postman Collection
+
+- [Cohort 2.0 Backend Collection](https://www.postman.com/aryanpatel287-9653818/workspace/cohort2-0-backend/collection/47014706-011a9c41-321a-465f-9fa2-3334193592a5?action=share&source=copy-link&creator=47014706)

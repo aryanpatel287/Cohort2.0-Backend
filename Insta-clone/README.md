@@ -30,6 +30,10 @@ Insta-clone is a full-stack social feed project with authentication, posts, like
 - [STYLING_RULES.md](STYLING_RULES.md)
   - Styling and UI convention rules
 
+## Postman Collection
+
+- [Cohort 2.0 Backend Collection](https://www.postman.com/aryanpatel287-9653818/workspace/cohort2-0-backend/collection/47014706-011a9c41-321a-465f-9fa2-3334193592a5?action=share&source=copy-link&creator=47014706)
+
 ## Local Setup
 
 ### 1) Clone and install
