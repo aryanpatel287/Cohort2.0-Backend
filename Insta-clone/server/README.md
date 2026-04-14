@@ -35,6 +35,7 @@ Create `.env` in this folder with:
 MONGO_URI=<your_mongodb_connection_string>
 JWT_SECRET=<your_jwt_secret>
 IMAGEKIT_PRIVATE_KEY=<your_imagekit_private_key>
+CLIENT_ORIGINS=http://localhost:5173,https://your-client-domain.com
 ```
 
 ## API Modules
