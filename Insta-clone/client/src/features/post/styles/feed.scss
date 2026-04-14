@@ -1,22 +1,88 @@
-//Imports
-
 @use "../../shared/styles/mixins" as *;
 @use "./post.scss";
 
+// ─── Feed Page ────────────────────────────────────────────────────────────────
 
-//Feed Styles
-
- .feed-page {
+.feed-page {
   width: 100%;
-  @include displayFlex($align: start, $justify: center);
+  @include displayFlex($align: flex-start, $justify: center);
+  padding: var(--sp-5) var(--sp-4);
 
   .feed {
-    max-width: 350px;
-    @include displayFlex($justify: center);
+    width: 100%;
+    max-width: 470px;
+    @include displayFlex($justify: center, $direction: column);
 
     .posts {
       width: 100%;
-      @include displayFlex($justify: center, $direction: column, $gap: 2rem);
+      @include displayFlex($justify: center, $direction: column, $gap: var(--sp-4));
     }
+  }
+}
+
+// ─── Loading State ────────────────────────────────────────────────────────────
+
+.feed-loading {
+  @include displayFlex($align: center, $justify: center, $direction: column, $gap: var(--sp-4));
+  padding: var(--sp-6) var(--sp-4);
+  width: 100%;
+  max-width: 470px;
+
+  .skeleton-post {
+    @include cardSurface(12px);
+    width: 100%;
+    overflow: hidden;
+
+    .skeleton-header {
+      @include displayFlex($align: center, $gap: var(--sp-3));
+      padding: var(--sp-3) var(--sp-4);
+
+      .skeleton-avatar {
+        width: 2.4rem;
+        height: 2.4rem;
+        border-radius: 50%;
+        @include shimmerAnimation();
+        flex-shrink: 0;
+      }
+
+      .skeleton-name {
+        height: 0.7rem;
+        width: 6rem;
+        border-radius: var(--radius-sm);
+        @include shimmerAnimation();
+      }
+    }
+
+    .skeleton-image {
+      width: 100%;
+      height: 300px;
+      @include shimmerAnimation();
+    }
+  }
+}
+
+// ─── Empty State ─────────────────────────────────────────────────────────────
+
+.feed-empty-state {
+  @include displayFlex($align: center, $justify: center, $direction: column, $gap: var(--sp-3));
+  padding: var(--sp-6) var(--sp-4);
+  color: var(--color-text-subtle);
+  text-align: center;
+  width: 100%;
+
+  i {
+    font-size: 3rem;
+    opacity: 0.35;
+  }
+
+  h3 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--color-text-muted);
+  }
+
+  p {
+    font-size: 0.85rem;
+    max-width: 24ch;
   }
 }

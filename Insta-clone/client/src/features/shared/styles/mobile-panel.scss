@@ -1,0 +1,81 @@
+@use "./mixins" as *;
+
+// ─── Mobile Sliding Panel ─────────────────────────────────────────────────────
+// Slides up from bottom over the feed, mobile-only
+
+.mobile-panel-overlay {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  // Backdrop
+  .mobile-panel-overlay {
+    display: block;
+    position: fixed;
+    inset: 0;
+    z-index: 300;
+    background: rgba(0, 0, 0, 0.55);
+    animation: fade-in 0.2s ease;
+
+    &.closing {
+      animation: fade-out 0.25s ease forwards;
+    }
+  }
+
+  // Panel sheet
+  .mobile-panel {
+    position: fixed;
+    bottom: calc(56px + env(safe-area-inset-bottom));
+    left: 0;
+    right: 0;
+    z-index: 310;
+    background: var(--color-bg-surface);
+    border: 1px solid var(--color-border);
+    border-bottom: none;
+    border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+    max-height: 65vh;
+    overflow-y: auto;
+    padding: var(--sp-4) var(--sp-3) var(--sp-3);
+    animation: slide-up 0.28s cubic-bezier(0.32, 0.72, 0, 1);
+
+    &.closing {
+      animation: slide-down 0.25s cubic-bezier(0.32, 0.72, 0, 1) forwards;
+    }
+
+    // Drag handle
+    .panel-drag-handle {
+      width: 2.5rem;
+      height: 4px;
+      border-radius: var(--radius-pill);
+      background: var(--color-border-muted);
+      margin: 0 auto var(--sp-4);
+    }
+
+    // Reuse list-wrapper styles but adapt for panel context
+    .list-wrapper {
+      width: 100%;
+    }
+  }
+}
+
+// ─── Keyframes ────────────────────────────────────────────────────────────────
+
+@keyframes slide-up {
+  from { transform: translateY(100%); }
+  to   { transform: translateY(0); }
+}
+
+@keyframes slide-down {
+  from { transform: translateY(0); }
+  to   { transform: translateY(100%); }
+}
+
+@keyframes fade-in {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@keyframes fade-out {
+  from { opacity: 1; }
+  to   { opacity: 0; }
+}

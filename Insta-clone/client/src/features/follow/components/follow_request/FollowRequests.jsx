@@ -6,13 +6,12 @@ import AcceptFollowRequestButton from './AcceptFollowRequestButton'
 import RejectFollowRequestButton from './RejectFollowRequestButton'
 
 const FollowRequests = () => {
-
     const { allFollowRequests, loading, handleAllFollowRequests } = useFollow()
     const [isHandleRunning, setIsHandleRunning] = useState(false)
 
     async function runHandleAllFollowRequests() {
         setIsHandleRunning(true)
-        console.log(await handleAllFollowRequests())
+        await handleAllFollowRequests()
         setIsHandleRunning(false)
     }
 
@@ -24,23 +23,39 @@ const FollowRequests = () => {
         return followRequestData.status === "pending"
     })
 
+    const isLoading = isHandleRunning && loading
+
     return (
         <div className='list-wrapper'>
-            <h4>Follow Requests</h4>
+            <div className="list-header">
+                <h4>Requests</h4>
+            </div>
             <div className="user-list">
-                {isHandleRunning && loading
-                    ? "Loading"
-                    : !pendingFollowRequests.length
-                        ? "No Follow Requests"
-                        : pendingFollowRequests.map((followRequestData) => {
-                            return <div className="user-list-item">
-                                <UserListCard key={followRequestData._id} userData={followRequestData.follower} />
-                                <div className="user-action-button-wrapper">
-                                    <AcceptFollowRequestButton key={followRequestData._id} followRecordId={followRequestData._id} />
-                                    <RejectFollowRequestButton key={followRequestData._id} followRecordId={followRequestData._id} />
-                                </div>
+                {isLoading ? (
+                    <div className="list-state--loading">
+                        {[1, 2].map((n) => (
+                            <div key={n} className="skeleton-row">
+                                <div className="skeleton-avatar" />
+                                <div className="skeleton-text" />
                             </div>
-                        })}
+                        ))}
+                    </div>
+                ) : !pendingFollowRequests.length ? (
+                    <div className="list-state--empty">
+                        <i className="ri-user-received-line" aria-hidden="true" />
+                        <p>No pending requests</p>
+                    </div>
+                ) : (
+                    pendingFollowRequests.map((followRequestData) => (
+                        <div key={followRequestData._id} className="user-list-item">
+                            <UserListCard userData={followRequestData.follower} />
+                            <div className="user-action-button-wrapper">
+                                <AcceptFollowRequestButton followRecordId={followRequestData._id} />
+                                <RejectFollowRequestButton followRecordId={followRequestData._id} />
+                            </div>
+                        </div>
+                    ))
+                )}
             </div>
         </div>
     )

@@ -1,46 +1,92 @@
 @use "./mixins" as *;
-main {
+
+// ─── Home Layout ──────────────────────────────────────────────────────────────
+
+.main {
   width: 100%;
   height: 100%;
-  padding: 1rem;
-  @include displayFlex($align: center, $direction: row, $gap: 1.5rem);
+  padding: 0;
+  @include displayFlex($align: flex-start, $direction: row);
+
+  // ── Sidebars ─────────────────────────────────────────────────────────────
+
+  .left-side,
+  .right-side {
+    width: 25%;
+    min-width: 200px;
+    height: 100%;
+    overflow-y: auto;
+    padding: var(--sp-4);
+    @include displayFlex($align: flex-start, $direction: column, $gap: var(--sp-4));
+    border-color: var(--color-border);
+
+    &::-webkit-scrollbar {
+      width: 3px;
+    }
+  }
 
   .left-side {
-    width: 25%;
-    height: 100%;
-    @include displayFlex($align: center, $direction: column, $gap: 1.5rem);
+    border-right: 1px solid var(--color-border);
 
-    .following-list-wrapper {
-      width: 100%;
-      height: 50%;
-      @include displayFlex($align: center, $direction: column, $gap: 1.5rem);
-    }
-
+    .following-list-wrapper,
     .followers-list-wrapper {
       width: 100%;
-      height: 50%;
-      @include displayFlex($align: center, $direction: column, $gap: 1.5rem);
     }
   }
+
+  // ── Middle Column ─────────────────────────────────────────────────────────
+
   .middle {
+    flex: 1;
+    min-width: 0;
     height: 100%;
-    width: 50%;
-    @include displayFlex($align: center, $direction: column, $gap: 1.5rem);
+    overflow-y: auto;
+    @include displayFlex($align: center, $direction: column);
   }
+
+  // ── Right Sidebar ─────────────────────────────────────────────────────────
+
   .right-side {
-    height: 100%;
-    width: 25%;
+    border-left: 1px solid var(--color-border);
 
-    .follow-request-list-wrapper {
-      width: 100%;
-      height: 50%;
-      @include displayFlex($align: center, $direction: column, $gap: 1.5rem);
-    }
-
+    .follow-request-list-wrapper,
     .otherUsers-list-wrapper {
       width: 100%;
-      height: 50%;
-      @include displayFlex($align: center, $direction: column, $gap: 1.5rem);
+    }
+  }
+}
+
+// ─── Responsive ───────────────────────────────────────────────────────────────
+
+// Tablet: hide left sidebar
+@media (max-width: 900px) {
+  .main {
+    .left-side {
+      display: none;
+    }
+
+    .middle {
+      flex: 1;
+    }
+
+    .right-side {
+      width: 220px;
+      min-width: 180px;
+    }
+  }
+}
+
+// Mobile: hide both sidebars, full-width feed
+@media (max-width: 600px) {
+  .main {
+    .left-side,
+    .right-side {
+      display: none;
+    }
+
+    .middle {
+      width: 100%;
+      flex: unset;
     }
   }
 }

@@ -77,5 +77,5 @@ async function getUserController(req, res) {
 module.exports = {
     getMeController,
     getAllUsersController,
-    getUserController
+    getUserController,
 }

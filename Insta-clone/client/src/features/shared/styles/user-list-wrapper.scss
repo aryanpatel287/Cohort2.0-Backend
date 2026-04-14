@@ -1,31 +1,100 @@
 @use "../../shared/styles/mixins" as *;
 
+// ─── User List Wrapper ────────────────────────────────────────────────────────
+
 .list-wrapper {
   width: 100%;
-  height: 100%;
-  padding-block: 1rem;
-  @include displayFlex($direction: column, $gap: 1rem);
+  @include displayFlex($direction: column, $gap: var(--sp-3));
+
+  // ── Section Header ──────────────────────────────────────────────────────
+
+  .list-header {
+    @include displayFlex($align: center, $justify: space-between);
+    padding: 0 var(--sp-2);
+
+    h4 {
+      font-size: 0.8rem;
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--color-text-muted);
+    }
+  }
+
+  // ── List ─────────────────────────────────────────────────────────────────
 
   .user-list {
-    @include displayFlex($direction: column, $gap: 1rem);
+    @include displayFlex($direction: column, $gap: 0.125rem);
     width: 100%;
-    padding-inline: 1rem;
 
     .user-list-item {
       @include displayFlex(
         $direction: row,
         $align: center,
-        $gap: 1.5rem
+        $justify: space-between,
+        $gap: var(--sp-2)
       );
+      padding: var(--sp-1) var(--sp-2);
+      border-radius: var(--radius-md);
+      transition: background var(--transition);
+
+      &:hover {
+        background: var(--color-bg-hover);
+      }
 
       .user-action-button-wrapper {
         @include displayFlex(
           $direction: row,
           $align: center,
-          $justify: space-between,
-          $gap: 0.5rem
+          $justify: flex-end,
+          $gap: var(--sp-1)
         );
+        flex-shrink: 0;
       }
+    }
+  }
+
+  // ── State: Loading ────────────────────────────────────────────────────────
+
+  .list-state--loading {
+    @include displayFlex($direction: column, $gap: var(--sp-2));
+    padding: var(--sp-2);
+
+    .skeleton-row {
+      @include displayFlex($align: center, $gap: var(--sp-3));
+
+      .skeleton-avatar {
+        width: 2rem;
+        height: 2rem;
+        border-radius: 50%;
+        @include shimmerAnimation();
+        flex-shrink: 0;
+      }
+
+      .skeleton-text {
+        height: 0.7rem;
+        flex: 1;
+        border-radius: var(--radius-sm);
+        @include shimmerAnimation();
+      }
+    }
+  }
+
+  // ── State: Empty ─────────────────────────────────────────────────────────
+
+  .list-state--empty {
+    @include displayFlex($align: center, $justify: center, $direction: column, $gap: var(--sp-2));
+    padding: var(--sp-4) var(--sp-2);
+    color: var(--color-text-subtle);
+    text-align: center;
+
+    i {
+      font-size: 1.5rem;
+      opacity: 0.5;
+    }
+
+    p {
+      font-size: 0.78rem;
     }
   }
 }

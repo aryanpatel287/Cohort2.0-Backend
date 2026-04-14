@@ -1,47 +1,128 @@
-@mixin flex-center($gap: 0rem) {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: $gap;
-}
-@mixin flex-column($gap: 0rem) {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: $gap;
-}
+@use "../../shared/styles/mixins" as *;
 
-main {
+// ─── Auth Layout ──────────────────────────────────────────────────────────────
+
+.auth-page {
   width: 100%;
   height: 100%;
-  @include flex-center();
+  @include displayFlex($align: center, $justify: center);
+  background: var(--color-bg);
+  padding: var(--sp-4);
+}
 
-  .form-container {
-    @include flex-column((2rem));
-    min-width: 300px;
-    width: 30%;
-    border-radius: 10px;
-    padding: 2rem;
+// ─── Form Card ────────────────────────────────────────────────────────────────
 
-    form {
-      @include flex-column(1rem);
+.form-container {
+  @include displayFlex($direction: column, $align: center, $gap: var(--sp-5));
+  width: min(420px, 100%);
+  padding: var(--sp-6) var(--sp-5);
+  background: var(--color-bg-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-card);
+
+  // ── Brand ──────────────────────────────────────────────────────────────
+
+  .auth-brand {
+    @include displayFlex($align: center, $direction: column, $gap: var(--sp-1));
+
+  }
+
+  .auth-brand-name {
+    font-size: 1.3rem;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    color: var(--color-text);
+    text-align: center;
+  }
+
+  // ── Heading ────────────────────────────────────────────────────────────
+
+  h1 {
+    font-size: 1.4rem;
+    font-weight: 600;
+    letter-spacing: -0.02em;
+    color: var(--color-text);
+    text-align: center;
+    margin-top: calc(-1 * var(--sp-3));
+  }
+
+  // ── Form ───────────────────────────────────────────────────────────────
+
+  form {
+    @include displayFlex($direction: column, $align: stretch, $gap: var(--sp-3));
+    width: 100%;
+
+    input {
       width: 100%;
+      height: 2.75rem;
+      padding: 0 var(--sp-4);
+      background: var(--color-bg-elevated);
+      border: 1px solid var(--color-border-muted);
+      border-radius: var(--radius-md);
+      color: var(--color-text);
+      font-family: var(--font-sans);
+      font-size: 0.9rem;
+      transition: border-color var(--transition), box-shadow var(--transition);
+      outline: none;
 
-      input {
-        height: 2.5rem;
-        background-color: transparent;
-        border: 1px solid whitesmoke;
-        border-radius: 10px;
-        min-width: 200px;
-        width: 60%;
-        color: whitesmoke;
-        padding: 0.5rem 1rem;
+      &::placeholder {
+        color: var(--color-text-subtle);
+      }
+
+      &:focus {
+        border-color: var(--color-accent);
+        box-shadow: var(--shadow-focus);
       }
     }
 
-    .toggle-auth-form {
-      color: #e33434;
-      text-decoration: none;
+    .button {
+      width: 100%;
+      justify-content: center;
+      margin-top: var(--sp-1);
+      height: 2.75rem;
+      font-size: 0.95rem;
     }
+  }
+
+  // ── Toggle Link ────────────────────────────────────────────────────────
+
+  .auth-footer {
+    font-size: 0.85rem;
+    color: var(--color-text-muted);
+    text-align: center;
+
+    .toggle-auth-form {
+      color: var(--color-accent);
+      text-decoration: none;
+      font-weight: 500;
+      margin-left: 0.25rem;
+      transition: opacity var(--transition);
+
+      &:hover {
+        opacity: 0.8;
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+// ─── Loading State ────────────────────────────────────────────────────────────
+
+.auth-loading-card {
+  width: min(420px, 100%);
+  padding: var(--sp-6);
+  background: var(--color-bg-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  @include displayFlex($direction: column, $gap: var(--sp-4));
+
+  .skeleton-line {
+    height: 0.8rem;
+    border-radius: var(--radius-sm);
+    @include shimmerAnimation();
+
+    &--short { width: 40%; }
+    &--full  { width: 100%; }
   }
 }

@@ -5,7 +5,6 @@ import axios from 'axios'
 import { useAuth } from '../hooks/useAuth'
 
 const Register = () => {
-
     const [username, setUsername] = useState('')
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')
@@ -15,22 +14,30 @@ const Register = () => {
 
     if (loading) {
         return (
-            <h1>Loading...</h1>
+            <div className="auth-page">
+                <div className="auth-loading-card">
+                    <div className="skeleton-line skeleton-line--short" />
+                    <div className="skeleton-line skeleton-line--full" />
+                    <div className="skeleton-line skeleton-line--full" />
+                    <div className="skeleton-line skeleton-line--full" />
+                    <div className="skeleton-line skeleton-line--full" />
+                </div>
+            </div>
         )
     }
 
     async function handleFormSubmit(e) {
         e.preventDefault()
-
         await handleRegister(username, email, password)
         navigate("/")
     }
 
     return (
-        <main>
+        <main className="auth-page">
             <div className='form-container'>
-                <h1>Register</h1>
-                <form action="" onSubmit={(e) => { handleFormSubmit(e) }}>
+                <p className="auth-brand-name">Not Instagram</p>
+                <h1>Create an account</h1>
+                <form onSubmit={(e) => { handleFormSubmit(e) }}>
                     <input
                         onInput={(e) => { setUsername(e.target.value) }}
                         value={username}
@@ -38,6 +45,7 @@ const Register = () => {
                         name="userName"
                         id="userName"
                         placeholder='Username'
+                        autoComplete="username"
                         required />
                     <input
                         onInput={(e) => { setEmail(e.target.value) }}
@@ -46,6 +54,7 @@ const Register = () => {
                         name="email"
                         id="email"
                         placeholder='Email'
+                        autoComplete="email"
                         required />
                     <input
                         onInput={(e) => { setPassword(e.target.value) }}
@@ -54,11 +63,14 @@ const Register = () => {
                         name="password"
                         id="password"
                         placeholder='Password'
+                        autoComplete="new-password"
                         required />
-                    <button type="submit" className='button primary-button'>Submit</button>
+                    <button type="submit" className='button primary-button'>Create account</button>
                 </form>
-                <p> Already have an account?  <Link className='toggle-auth-form' to="/login" >Login</Link> </p>
-
+                <p className="auth-footer">
+                    Already have an account?
+                    <Link className='toggle-auth-form' to="/login">Sign in</Link>
+                </p>
             </div>
         </main>
     )

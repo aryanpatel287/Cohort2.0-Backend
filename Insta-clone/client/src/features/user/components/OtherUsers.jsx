@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from 'react'
 import { useUser } from '../hooks/useUser'
+import '../../shared/styles/user-list-wrapper.scss'
 import UserListCard from '../../shared/components/UserListCard'
 import { useAuth } from '../../auth/hooks/useAuth'
 
-const NotFollowedUsers = () => {
+const OtherUsers = () => {
     const { user } = useAuth()
     const { allUsers, loading, handleGetAllUsers } = useUser()
     const [isHandleRunning, setIsHandleRunning] = useState(false)
@@ -22,20 +23,36 @@ const NotFollowedUsers = () => {
         return userData.username !== user?.username
     })
 
+    const isLoading = isHandleRunning && loading
+
     return (
         <div className='list-wrapper'>
-            <h4>Other Users</h4>
+            <div className="list-header">
+                <h4>Discover</h4>
+            </div>
             <div className="user-list">
-                {isHandleRunning && loading
-                    ? "Loading"
-                    : !otherUsers.length
-                        ? "No users found"
-                        : otherUsers.map((userData) => {
-                            return <UserListCard key={userData._id} userData={userData} />
-                        })}
+                {isLoading ? (
+                    <div className="list-state--loading">
+                        {[1, 2, 3].map((n) => (
+                            <div key={n} className="skeleton-row">
+                                <div className="skeleton-avatar" />
+                                <div className="skeleton-text" />
+                            </div>
+                        ))}
+                    </div>
+                ) : !otherUsers.length ? (
+                    <div className="list-state--empty">
+                        <i className="ri-user-search-line" aria-hidden="true" />
+                        <p>No other users found</p>
+                    </div>
+                ) : (
+                    otherUsers.map((userData) => (
+                        <UserListCard key={userData._id} userData={userData} />
+                    ))
+                )}
             </div>
         </div>
     )
 }
 
-export default NotFollowedUsers
+export default OtherUsers

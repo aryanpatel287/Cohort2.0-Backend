@@ -1,22 +1,25 @@
-//Imports
-
 @use "../../shared/styles/mixins" as *;
 
-//Post Styles
+// ─── Post Card ────────────────────────────────────────────────────────────────
 
 .post {
   width: 100%;
-  @include displayFlex($justify: center, $direction: column, $gap: 0.25rem);
+  @include displayFlex($justify: center, $direction: column, $gap: 0);
+  @include cardSurface(12px);
+  overflow: hidden;
+
+  // ── User Details ──────────────────────────────────────────────────────────
 
   .user-details-wrapper {
-    @include displayFlex($align: center, $gap: 1rem);
+    @include displayFlex($align: center, $gap: var(--sp-3));
+    padding: var(--sp-3) var(--sp-4);
 
     .user-image-wrapper {
-      width: 2.5rem;
-      height: 2.5rem;
+      width: 2.4rem;
+      height: 2.4rem;
       padding: 0.1rem;
-      aspect-ratio: 1/1;
-      border: 1px solid red;
+      aspect-ratio: 1 / 1;
+      border: 2px solid var(--color-accent);
       border-radius: 50%;
       box-sizing: border-box;
       overflow: hidden;
@@ -32,63 +35,101 @@
     }
 
     .username {
+      font-size: 0.875rem;
+      font-weight: 600;
       cursor: pointer;
+      color: var(--color-text);
+      transition: color var(--transition);
+
+      &:hover {
+        color: var(--color-accent);
+      }
     }
   }
+
+  // ── Post Image ────────────────────────────────────────────────────────────
 
   .post-image-wrapper {
     width: 100%;
 
     .post-image {
       width: 100%;
-      border-radius: 3px;
+      display: block;
+      object-fit: cover;
     }
   }
 
+  // ── Post Actions ──────────────────────────────────────────────────────────
+
   .post-actions-wrapper {
     @include displayFlex($align: center, $justify: space-between);
-    padding-inline: 0.5rem;
+    padding: var(--sp-2) var(--sp-3);
 
     .left,
     .right {
-      @include displayFlex($align: center, $gap: 1rem);
+      @include displayFlex($align: center, $gap: var(--sp-3));
 
       button {
         @include displayFlex($align: center);
-        background-color: transparent;
+        background: transparent;
         border: none;
         outline: none;
-        padding: 0;
+        padding: var(--sp-1);
+        border-radius: var(--radius-sm);
+        cursor: pointer;
+        transition: background var(--transition), transform var(--transition);
+
+        &:hover {
+          background: var(--color-bg-hover);
+          transform: scale(1.1);
+        }
+
+        &:active {
+          transform: scale(0.92);
+        }
 
         i {
-          font-size: 1.75rem;
+          font-size: 1.6rem;
           line-height: 1;
-          color: white;
+          color: var(--color-text);
+          transition: color var(--transition);
+        }
+
+        &:focus-visible {
+          outline: 2px solid var(--color-accent);
+          outline-offset: 2px;
         }
       }
 
       button.action-with-count {
-        gap: 0.4rem;
+        gap: 0.35rem;
 
         .action-count {
-          color: #ffffff;
-          font-size: 1.05rem;
+          color: var(--color-text-muted);
+          font-size: 0.875rem;
           font-weight: 500;
           line-height: 1;
         }
       }
 
       button.liked i {
-        color: red;
+        color: var(--color-accent);
       }
     }
   }
 
+  // ── Caption ───────────────────────────────────────────────────────────────
+
   .post-caption-wrapper {
+    padding: 0 var(--sp-4) var(--sp-3);
+
     .post-caption {
       width: 100%;
+      font-size: 0.875rem;
+      line-height: 1.55;
+      color: var(--color-text-muted);
       word-break: break-word;
-      padding-inline: 0.5rem;
+      overflow-wrap: anywhere;
     }
   }
 }

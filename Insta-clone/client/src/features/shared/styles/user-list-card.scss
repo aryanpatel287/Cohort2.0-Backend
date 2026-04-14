@@ -1,23 +1,50 @@
 @use "../../shared/styles/mixins" as *;
 
+// ─── User List Card ───────────────────────────────────────────────────────────
+
 .user-list-card-wrapper {
   @include displayFlex(
     $align: center,
     $direction: row,
-    $gap: 1.5rem,
+    $gap: var(--sp-3),
     $justify: space-between
   );
+  padding: var(--sp-2) var(--sp-2);
+  border-radius: var(--radius-md);
   cursor: pointer;
+  transition: background var(--transition), transform var(--transition);
+  min-width: 0;
+
+  &:hover {
+    background: var(--color-bg-hover);
+    transform: translateY(-1px);
+  }
+
+  &:active {
+    transform: scale(0.97);
+  }
 
   .user-details {
-    @include displayFlex($align: center, $direction: row, $gap: 1rem);
+    @include displayFlex($align: center, $direction: row, $gap: var(--sp-3));
+    min-width: 0;
 
-    img {
-      width: 2rem;
-      height: 2rem;
+    .user-avatar {
+      width: 2.25rem;
+      height: 2.25rem;
+      border-radius: 50%;
       object-fit: cover;
       display: block;
-      border-radius: 50%;
+      flex-shrink: 0;
+      border: 1.5px solid var(--color-border-muted);
+      background: var(--color-bg-elevated);
+    }
+
+    .username {
+      font-size: 0.85rem;
+      font-weight: 500;
+      color: var(--color-text);
+      @include truncateText();
+      max-width: 9rem;
     }
   }
 }
