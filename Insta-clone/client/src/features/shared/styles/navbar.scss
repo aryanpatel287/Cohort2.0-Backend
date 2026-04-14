@@ -41,5 +41,19 @@
     .button.create-post {
       min-width: 120px;
     }
+
+    .repo-link {
+      min-width: 2.3rem;
+      width: 2.3rem;
+      height: 2.3rem;
+      padding: 0;
+      text-decoration: none;
+      @include displayFlex($align: center, $justify: center, $gap: 0.35rem);
+
+      i {
+        font-size: 1.15rem;
+        line-height: 1;
+      }
+    }
   }
 }

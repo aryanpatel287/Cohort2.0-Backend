@@ -28,6 +28,15 @@ const Navbar = () => {
                         <i className="ri-add-line" aria-hidden="true" />
                         Create Post
                     </button>
+                    <a
+                        href="https://github.com/aryanpatel287/Cohort2.0-Backend/tree/main/Insta-clone"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className='repo-link button secondary-button'
+                        aria-label="Open GitHub repository"
+                    >
+                        <i className="ri-github-fill" aria-hidden="true" />
+                    </a>
                     <ActiveUser />
                 </div>
             </div>
