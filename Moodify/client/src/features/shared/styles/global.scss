@@ -1,0 +1,29 @@
+@use "./button.scss";
+@use "./_mixins.scss";
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background-color: #1e1e1e;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+}
+
+a {
+  color: #ff5e00;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}

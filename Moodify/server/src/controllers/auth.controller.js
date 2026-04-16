@@ -2,9 +2,10 @@ const userModel = require("../models/user.model")
 const jwt = require('jsonwebtoken')
 const bcrypt = require('bcryptjs')
 const blacklistModel = require("../models/blacklist.model")
+const redis = require('../config/cache')
 
 async function registerUserController(req, res) {
-
+    console.log(req.body)
     const { username, email, password } = req.body
 
     if (!username || !email || !password) {
@@ -77,8 +78,6 @@ async function loginUserController(req, res) {
         })
     }
 
-    console.log(user)
-
     const isPasswordValid = await bcrypt.compare(password, user.password)
     if (!isPasswordValid) {
         return res.status(401).json({
@@ -97,6 +96,7 @@ async function loginUserController(req, res) {
     res.status(200).json({
         message: "logged in successfully",
         user: {
+            _id: user._id,
             username: user.username,
             email: user.email
         }
@@ -106,17 +106,15 @@ async function loginUserController(req, res) {
 async function logoutUserController(req, res) {
     const token = req.cookies.token
 
-    res.clearCookie("token")
-
     if (!token) {
         return res.status(400).json({
             message: "token not found"
         })
     }
 
-    await blacklistModel.create({
-        token
-    })
+    res.clearCookie("token")
+
+    await redis.set(token, Date.now().toString())
 
     return res.status(200).json({
         message: "logged out successfully"

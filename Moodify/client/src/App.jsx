@@ -1,13 +1,12 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
-import heroImg from './assets/hero.png'
-import './App.css'
-import FaceExpression from './features/expression/components/FaceExpression'
+import { RouterProvider } from 'react-router'
+import { router } from './app.routes'
+import { AuthProvider } from './features/auth/authContext'
 
 function App() {
   return (
-    <FaceExpression />
+    <AuthProvider>
+      <RouterProvider router={router} />
+    </AuthProvider>
   )
 }
 

@@ -1,0 +1,32 @@
+// ─── Mixins ──────────────────────────────────────────────────────────────────
+
+@mixin displayFlex(
+  $align: stretch,
+  $justify: flex-start,
+  $direction: row,
+  $gap: 0rem
+) {
+  display: flex;
+  align-items: $align;
+  justify-content: $justify;
+  flex-direction: $direction;
+  gap: $gap;
+}
+
+@mixin truncateText {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+@mixin shimmerAnimation {
+  background: linear-gradient(110deg, #1a2330 8%, #243040 18%, #1a2330 33%);
+  background-size: 200% 100%;
+  animation: shimmer 1.5s linear infinite;
+}
+
+@keyframes shimmer {
+  to {
+    background-position-x: -200%;
+  }
+}
