@@ -5,10 +5,9 @@ import { Navigate, useNavigate } from 'react-router'
 const Protected = ({ children }) => {
 
     const { user, loading } = useAuth()
-    const navigate = useNavigate()
 
     if (loading) {
-        <h1>Loading</h1>
+        return <h1>Loading</h1>
     }
 
     if (!user) {

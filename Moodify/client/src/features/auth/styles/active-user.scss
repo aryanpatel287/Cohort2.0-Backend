@@ -1,0 +1,24 @@
+@use "../../shared/styles/_mixins.scss" as *;
+
+.active-user {
+  @include displayFlex(center, flex-start, row, 0.8rem);
+  flex-wrap: wrap;
+}
+
+.active-user-name {
+  margin: 0;
+  font-size: 0.95rem;
+  color: #fff;
+}
+
+.active-user-loading {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #cfcfcf;
+}
+
+@media (max-width: 560px) {
+  .active-user {
+    width: 100%;
+  }
+}

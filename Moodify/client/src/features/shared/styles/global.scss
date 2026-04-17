@@ -17,6 +17,14 @@ body {
   background-color: #1e1e1e;
   color: #fff;
   font-family: "Poppins", sans-serif;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+#root {
+  min-height: 100vh;
+  width: 100%;
+  padding: 1rem;
 }
 
 a {

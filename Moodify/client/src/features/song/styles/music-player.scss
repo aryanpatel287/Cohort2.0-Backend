@@ -1,0 +1,170 @@
+@use "../../shared/styles/mixins" as *;
+
+.music-player-bottom-wrap {
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+  left: 1rem;
+  z-index: 40;
+}
+
+.music-player-bottom {
+  @include displayFlex(center, space-between, row, 1.25rem);
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border-radius: 1rem;
+  background: rgba(31, 31, 35, 0.96);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(8px);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.35);
+}
+
+.music-player-track-meta {
+  @include displayFlex(center, flex-start, row, 0.75rem);
+  min-width: 12rem;
+  flex: 0 0 13.5rem;
+}
+
+.music-player-track-poster {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 0.45rem;
+  object-fit: cover;
+}
+
+.music-player-track-text {
+  min-width: 0;
+}
+
+.music-player-track-title {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #fff;
+  @include truncateText;
+}
+
+.music-player-track-subtitle {
+  margin: 0.2rem 0 0;
+  font-size: 0.85rem;
+  color: #a9a9a9;
+  text-transform: capitalize;
+  @include truncateText;
+}
+
+.music-player-main-controls {
+  @include displayFlex(center, center, column, 0.45rem);
+  flex: 1;
+  min-width: 0;
+}
+
+.music-player-actions {
+  @include displayFlex(center, center, row, 0.7rem);
+}
+
+.music-player-icon-btn,
+.music-player-play-btn {
+  @include displayFlex(center, center);
+  border: 0;
+  background: transparent;
+  color: #f4f4f4;
+  cursor: pointer;
+  transition: color 0.2s ease;
+
+  &:hover {
+    color: #ff5e00;
+  }
+
+  i {
+    line-height: 1;
+  }
+}
+
+.music-player-icon-btn {
+  width: 2rem;
+  height: 2rem;
+
+  i {
+    font-size: 1.35rem;
+  }
+}
+
+.music-player-play-btn {
+  width: 2.4rem;
+  height: 2.4rem;
+  border-radius: 999px;
+  background: #ff5e00;
+  color: #fff;
+
+  &:hover {
+    color: #fff;
+    background: #e65400;
+  }
+
+  i {
+    font-size: 1.35rem;
+  }
+}
+
+.music-player-progress-row {
+  @include displayFlex(center, center, row, 0.55rem);
+  width: min(100%, 34rem);
+  font-size: 0.8rem;
+  color: #b9b9b9;
+
+  span {
+    min-width: 2rem;
+  }
+}
+
+.music-player-progress,
+.music-player-volume {
+  width: 100%;
+  accent-color: #ff5e00;
+  cursor: pointer;
+}
+
+.music-player-volume-wrap {
+  @include displayFlex(center, flex-end, row, 0.55rem);
+  flex: 0 0 9rem;
+  color: #d9d9d9;
+
+  i {
+    font-size: 1.1rem;
+  }
+}
+
+.music-player-volume {
+  max-width: 6.5rem;
+}
+
+.music-player-loading-hint {
+  margin-top: 0.35rem;
+  font-size: 0.75rem;
+  color: #c9c9c9;
+  text-align: right;
+}
+
+@media (max-width: 900px) {
+  .music-player-bottom {
+    @include displayFlex(stretch, flex-start, column, 0.8rem);
+  }
+
+  .music-player-track-meta,
+  .music-player-volume-wrap {
+    flex: none;
+    width: 100%;
+  }
+
+  .music-player-main-controls {
+    width: 100%;
+  }
+
+  .music-player-progress-row {
+    width: 100%;
+  }
+
+  .music-player-volume-wrap {
+    justify-content: flex-start;
+  }
+}

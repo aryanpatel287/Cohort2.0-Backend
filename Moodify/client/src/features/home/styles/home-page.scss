@@ -1,0 +1,25 @@
+.home-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  min-height: 100%;
+  width: 100%;
+}
+
+.home-expression {
+  width: 100%;
+  max-width: 56rem;
+}
+
+.home-player {
+  width: 100%;
+  max-width: 56rem;
+}
+
+@media (max-width: 900px) {
+  .home-page {
+    gap: 1rem;
+    padding-bottom: 8.5rem;
+  }
+}

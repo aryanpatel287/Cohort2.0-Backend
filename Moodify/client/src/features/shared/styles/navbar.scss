@@ -1,0 +1,31 @@
+@use "./_mixins.scss" as *;
+
+.navbar {
+  @include displayFlex(center, space-between, row, 1rem);
+  width: 100%;
+  padding: 0.75rem 0;
+  margin-bottom: 1.5rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.navbar-brand {
+  font-size: 1.4rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  color: #fff;
+}
+
+.navbar-user-wrap {
+  @include displayFlex(center, flex-end);
+}
+
+@media (max-width: 560px) {
+  .navbar {
+    @include displayFlex(flex-start, flex-start, column, 0.8rem);
+  }
+
+  .navbar-user-wrap {
+    width: 100%;
+    justify-content: flex-start;
+  }
+}
