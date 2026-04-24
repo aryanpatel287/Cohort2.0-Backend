@@ -1,4 +1,5 @@
 import { Server } from 'socket.io';
+import { generateResponse, startAiChat, streamAiChat } from '../services/ai.service.js';
 
 let io;
 
@@ -23,6 +24,7 @@ export function getIO() {
     if (!io) {
         throw new Error('Socket.io not initialized');
     }
+    return io;
 }
 
 function listenMessage(socket) {
@@ -31,7 +33,7 @@ function listenMessage(socket) {
             `[${new Date().toISOString()}] Received from ${socket.id}:`,
             msg,
         );
-        const aiResponse = await streamAiChat(msg);
-        socket.emit('aiResponse', aiResponse);
+        const aiReply = await streamAiChat(msg);
+        socket.emit('aiReply', aiReply);
     });
 }

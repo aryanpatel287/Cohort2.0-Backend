@@ -1,4 +1,4 @@
-import app from "./src/app.js";
+import app from "../../Day122_GenAi/src/app.js";
 import { createServer } from "http";
 import { Server } from "socket.io";
 

@@ -6,11 +6,13 @@ export async function searchWeb(query) {
     console.log('searchWeb called');
 
     const response = await tvly.search(query, {
-        searchDepth: 'basic',
+        maxResults: 5,
     });
 
-    const searchResults = response.results[0];
+    const searchResults = JSON.stringify(response.results);
     // console.log('type of results: ', typeof searchResults.content);
 
-    return searchResults.content;
+    console.log(searchResults);
+
+    return searchResults;
 }
