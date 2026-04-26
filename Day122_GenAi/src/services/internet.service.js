@@ -7,6 +7,7 @@ export async function searchWeb(query) {
 
     const response = await tvly.search(query, {
         maxResults: 5,
+        include_favicon: true,
     });
 
     const searchResults = JSON.stringify(response.results);
