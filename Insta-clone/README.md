@@ -2,6 +2,8 @@
 
 Insta-clone is a full-stack social feed project with authentication, posts, likes, follow requests, followers, following, and profile views.
 
+**Live Demo:** [https://cohort2-0-backend-z7gf.onrender.com](https://cohort2-0-backend-z7gf.onrender.com)
+
 ## Tech Stack
 
 ### Client
