@@ -1,5 +1,6 @@
-import { config as loadEnv } from 'dotenv';
-loadEnv();
+import dotenv from 'dotenv';
+
+dotenv.config();
 
 type CONFIG = {
     readonly GOOGLE_API_KEY: string;
