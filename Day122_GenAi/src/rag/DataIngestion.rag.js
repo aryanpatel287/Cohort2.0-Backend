@@ -18,25 +18,14 @@ const embeddingModel = new MistralAIEmbeddings({
 
 const filePath = './src/assets/the_last_train_story.pdf';
 
-async function parseUploadedPDF(filePath) {
-    const dataBuffer = fs.readFileSync(filePath);
+const fileBuffer = fs.readFileSync(filePath);
 
+async function parseUploadedPDF(dataBuffer) {
     const parser = new PDFParse({
         data: dataBuffer,
     });
 
-    console.log('parser: ', parser);
-
-    console.log(
-        '==================================================================================================================================',
-    );
-
     const data = await parser.getText();
-
-    // console.log('data: ', data);
-    // console.log(
-    //     '==================================================================================================================================',
-    // );
 
     return data;
 }
@@ -60,11 +49,6 @@ async function chunkAndEmbedThePDF(data) {
         }),
     );
     return docs;
-
-    // console.log('docs: ', docs);
-    // console.log(
-    //     '==================================================================================================================================',
-    // );
 }
 
 async function upsertTheVector(docs) {
@@ -85,50 +69,28 @@ async function deleteTheVector() {
     const deleteResult = await index.deleteAll();
     console.log('All vectors deleted successfully');
     console.log('Delete result: ', deleteResult);
-    console.log(
-        '==================================================================================================================================',
-    );
 }
 
-export async function dataIngestion(filePath) {
+export async function dataIngestion(dataBuffer) {
     try {
-        const data = await parseUploadedPDF(filePath);
+        console.log('DataIngestion Started');
 
-        console.log('data: ', data);
-        console.log(
-            '==================================================================================================================================',
-        );
+        const data = await parseUploadedPDF(dataBuffer);
+        console.log('PDF parsing completed');
 
         const docs = await chunkAndEmbedThePDF(data);
-
-        console.log('docs: ', docs);
-        console.log(
-            '==================================================================================================================================',
-        );
+        console.log('Chunking and embedding completed');
 
         await upsertTheVector(docs);
+        console.log('Data ingestion completed successfully');
     } catch (error) {
         console.error('Error during data ingestion: ', error);
     }
 }
 
-export async function queryTheVector(prompt) {
-    const queryEmbedding = await embeddingModel.embedQuery(prompt);
 
-    const queryResult = await index.query({
-        vector: queryEmbedding,
-        topK: 3,
-        includeMetadata: true,
-    });
-
-    console.log('Query result: ', queryResult);
-    console.log('Query matches: ', queryResult.matches);
-
-    return queryResult.matches;
-}
-
-// await dataIngestion(filePath);
-await queryTheVector('What is the story about?')
+// await dataIngestion(fileBuffer);
+// await queryTheVector('What is the story about?');
 
 /**
  * NOTE : Return the results in the strings format using the JSON.stringify()
