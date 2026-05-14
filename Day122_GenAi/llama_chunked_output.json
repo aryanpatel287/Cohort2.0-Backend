@@ -1,0 +1,982 @@
+[
+  {
+    "markdown": "# Campus Job Description - 2027\n\n1. **AI Java Developer**\n\nStreams: B.Tech / B.E. - CS & IT\nAverage of 10th and 12th: 80%\nBond: 3 years\n\n**Java Developer:**\n\n**Skills:**\n\n* OOPS, programming language.\n* Creative thinking, analytical skills, and problem-solving abilities\n* Flexible to work with any technology\n* Familiar with SDLC, Software Engineering\n* Data structures\n* Basic SQL\n\n**Job Responsibilities:**\n\n* Designing automation Framework\n* Creating, enhancing, debugging, and executing Automation scripts\n* Process Automation\n* Understand business requirements, research different tools-technologies, and implement an efficient automation solution.\n\n**AI Developer:**\n\n**Skills:**",
+    "metadata": {
+      "pageNumber": 1,
+      "h1": "Campus Job Description - 2027",
+      "h2": null,
+      "h3": null,
+      "chunkIndex": 0
+    }
+  },
+  {
+    "markdown": "**AI Developer:**\n\n**Skills:**\n\n* Strong fundamentals in Python and Java\n* Knowledge of Data Structures  Structures & Algorithms\n* Basic understanding of Machine Learning and statistics\n* Good problem-solving and logical reasoning skills\n* Exposure to Generative AI, NLP, Deep Learning, or frameworks/tools is an added advantage\n\n**Responsibilities:**",
+    "metadata": {
+      "pageNumber": 1,
+      "h1": "Campus Job Description - 2027",
+      "h2": null,
+      "h3": null,
+      "chunkIndex": 1
+    }
+  },
+  {
+    "markdown": "**Responsibilities:**\n\n* Design, develop, and deploy AI/ML-driven applications\n* Perform data preprocessing, model training, and evaluation\n* Build and integrate AI/ML models into applications\n* Harness LLMs, prompt engineering, and AI tools to develop intelligent Solutions.\n* Design and consume REST APIs\n* Collaborate on use cases in Generative AI, NLP, and Deep Learning",
+    "metadata": {
+      "pageNumber": 1,
+      "h1": "Campus Job Description - 2027",
+      "h2": null,
+      "h3": null,
+      "chunkIndex": 2
+    }
+  },
+  {
+    "markdown": "## 2. Dotnet Developer\n\nStreams: B.Tech / B.E. - CS, IT & EC, MCA/M.Sc. (CS/IT)\nAverage of 10th and 12th: 80%\nBond: 3 years\n\n**Key Responsibilities:**\n*   Develop and maintain backend applications using .NET 8 / ASP.NET Core\n*   Build and consume RESTful APIs\n*   Write and execute SQL queries\n*   Debug, test, and troubleshoot application issues\n*   Follow OOP principles and coding best practices\n*   Use Git/Version control for efficient code management",
+    "metadata": {
+      "pageNumber": 2,
+      "h1": null,
+      "h2": "2. Dotnet Developer",
+      "h3": null,
+      "chunkIndex": 0
+    }
+  },
+  {
+    "markdown": "**Required Skills & Qualifications:**\n*   Strong knowledge of C# and .NET 8 fundamentals\n*   Understanding of HTTP/HTTPS, REST APIs, and request/response lifecycle\n*   Familiarity with ASP.NET Core MVC / Web API\n*   Basic knowledge of PostgreSQL, SQL Server, MySQL, or relational databases\n*   Solid understanding of Object-Oriented Programming (OOP)\n*   Ability to write, analyze, and explain code solutions\n\n**Nice to Have:**\n*   Exposure to backend frameworks like .NET 8, ASP.NET MVC, Spring, or Spring Boot\n*   Knowledge of Entity Framework Core",
+    "metadata": {
+      "pageNumber": 2,
+      "h1": null,
+      "h2": "2. Dotnet Developer",
+      "h3": null,
+      "chunkIndex": 1
+    }
+  },
+  {
+    "markdown": "## 3. Angular Developer\n\nStreams: B.Tech / B.E. - CS  - CS & IT, MCA/M.Sc. (CS/IT)\nAverage of 10th and 12th: 80%\nBond: 3 years\n\n**Key Responsibilities:**\n*   Delivering a high-quality application\n*   Integrating with back-end developers\n*   Analyzing requirements, designing and developing new functionality for a web application based in Angular.\n*   Creating reusable components using Angular to be used across the application.\n*   Supporting and fixing existing functionality\n\n**Job Description:**\n*   Strong problem solving and analytical skills.\n*   Deep understanding of Web as an application platform, browsers, web-servers, web-services,",
+    "metadata": {
+      "pageNumber": 2,
+      "h1": null,
+      "h2": "3. Angular Developer",
+      "h3": null,
+      "chunkIndex": 2
+    }
+  },
+  {
+    "markdown": "and APIs.\n- Familiarity and a working understanding of HTTP and web sockets.\n- Must be fluent in writing applications/solutions using Javascript/typescript\n- Must be able to create and design UI components using HTML and CSS.\n- Strong fundamentals in Object-oriented design and must be able to program according to a given application design.\n- Must have knowledge about front-end application security and ability to write secure code.\n- Strong understanding of Angular and must have experience of developing front-end applications using Angular\n- Must have strong debugging skills.\n- Should be able to understand and extend existing project code.",
+    "metadata": {
+      "pageNumber": 3,
+      "h1": null,
+      "h2": null,
+      "h3": null,
+      "chunkIndex": 0
+    }
+  },
+  {
+    "markdown": "**Required Skills & Qualifications:**\nSkills: Angular, React, Next.js, HTML, CSS, Typescript, Javascript, SCSS, front end.",
+    "metadata": {
+      "pageNumber": 3,
+      "h1": null,
+      "h2": null,
+      "h3": null,
+      "chunkIndex": 1
+    }
+  },
+  {
+    "markdown": "## 4. Data Engineer (Mid-Shift)\n\nStreams: B.Tech / B.E. - CS & IT\nAverage of 10th and 12th: 80%\nBond: 3 years",
+    "metadata": {
+      "pageNumber": 3,
+      "h1": null,
+      "h2": "4. Data Engineer (Mid-Shift)",
+      "h3": null,
+      "chunkIndex": 2
+    }
+  },
+  {
+    "markdown": "**Job Description**\nWe are seeking a client-facing Data Engineer to deliver end-to-end healthcare data solutions across EHR platforms. This role involves designing and maintaining reliable data pipelines, developing and optimizing SQL and ETL workflows, and transforming data using SQL, Python, or Java as needed. You will work with multiple data sources, ensure data quality and integrity, manage system integrations, and support analytics and reporting using tools such as PowerBI, Tableau, and Google Data Studio. The ideal candidate brings strong technical expertise, a hands-on approach, and clear communication skills to successfully manage data projects directly with clients.",
+    "metadata": {
+      "pageNumber": 3,
+      "h1": null,
+      "h2": "4. Data Engineer (Mid-Shift)",
+      "h3": null,
+      "chunkIndex": 3
+    }
+  },
+  {
+    "markdown": "**Key Responsibilities**\n- Execute end-to-end data engineering projects including migration, transformation, extraction, and reconciliation\n- Design and optimize complex SQL queries across multiple relational databases\n- Perform large-scale data restructuring, validation, and integrity checks\n- Build and maintain ETL workflows, data utilities, and automation scripts\n- Develop custom data extracts, interfaces, and client-specific reporting datasets.\n- Create analytical and visualization reports using Power BI or similar BI tools\n- Develop technical utilities and pipelines using Python and Java where required.",
+    "metadata": {
+      "pageNumber": 3,
+      "h1": null,
+      "h2": "4. Data Engineer (Mid-Shift)",
+      "h3": null,
+      "chunkIndex": 4
+    }
+  },
+  {
+    "markdown": "* Investigate and resolve complex data issues and edge cases\n* Work directly with clients to gather requirements, explain data behavior, and deliver solutions.\n* Own delivery timelines and manage assigned projects from requirement to final handover.\n\n**Required Skills:**\n* Strong SQL and relational database expertise (PostgreSQL, SQL Server, MySQL, Sybase, etc.)\n* Hands-on experience in ETL, data transformation, and large dataset handling\n* Proficiency in Python, working knowledge of Java preferred\n* Experience with reporting and BI tools such as Power BI\n* Strong analytical and troubleshooting ability\n* Excellent client communication and documentation skills\n* Strong Problem solving skills",
+    "metadata": {
+      "pageNumber": 4,
+      "h1": null,
+      "h2": null,
+      "h3": null,
+      "chunkIndex": 0
+    }
+  },
+  {
+    "markdown": "## 5. PHP/Laravel Developer\n\nStreams: B.Tech / B.E. - CS  CS & IT, MCA/M.Sc. - CS/IT\nAverage of 10th and 12th: 80%\nBond: 3 years\n\nWe're looking for a curious, code-hungry developer ready to build with PHP & Laravel. You'll ship real features from week one — guided by senior engineers, strong code reviews, and a clean, modern Codebase.",
+    "metadata": {
+      "pageNumber": 4,
+      "h1": null,
+      "h2": "5. PHP/Laravel Developer",
+      "h3": null,
+      "chunkIndex": 1
+    }
+  },
+  {
+    "markdown": "### What You'll Do\n* Build and maintain features in Laravel — controllers, models, migrations, and Blade views\n* Write clean, readable code following MVC and Laravel conventions\n* Develop and consume RESTful APIs for web and mobile clients\n* Work with MySQL — write queries, design simple schemas, optimize slow ones\n* Fix bugs, debug production issues, and participate in code reviews\n* Write basic unit tests using PHPUnit or Pest\n* Collaborate via Git — branches, pull requests, and meaningful commits",
+    "metadata": {
+      "pageNumber": 4,
+      "h1": null,
+      "h2": "5. PHP/Laravel Developer",
+      "h3": "What You'll Do",
+      "chunkIndex": 2
+    }
+  },
+  {
+    "markdown": "### What We're Looking For\n* Solid grasp of PHP fundamentals — OOP, arrays, functions, error handling\n* Working knowledge of Laravel — Eloquent, routing, middleware, Blade\n* Understanding of MVC architecture and clean code principles\n* Basic SQL skills (joins, indexes, aggregates)\n* Comfortable with Git / GitHub workflows\n* Familiarity with HTML, CSS, and basic JavaScript\n* Willingness to learn, debug patiently, and ask good questions",
+    "metadata": {
+      "pageNumber": 4,
+      "h1": null,
+      "h2": "5. PHP/Laravel Developer",
+      "h3": "What We're Looking For",
+      "chunkIndex": 3
+    }
+  },
+  {
+    "markdown": "**Bonus Points**\n\n*   A GitHub portfolio or personal projects built with Laravel\n*   Experience with Vue.js, Livewire, or Inertia.js\n*   Exposure to Docker, Linux, or basic deployment workflows\n*   Familiarity with Redis, queues, or caching strategies\n*   Any contribution to open-source or hackathon projects\n\n**What You'll Get**\n\n*   A dedicated mentor and code reviews that actually teach\n*   Exposure to the full stack — API, database, deployment\n*   A modern tech stack and room to grow into a mid-level engineer\n\n**6. DevOps Engineer (Rotational Shift)**\n\nStreams: B.Tech / B.E. - CS & IT, MCA/M.Sc. - CS/IT\nAverage of 10th and 12th: 80%\nBond: 3 years",
+    "metadata": {
+      "pageNumber": 5,
+      "h1": null,
+      "h2": null,
+      "h3": null,
+      "chunkIndex": 0
+    }
+  },
+  {
+    "markdown": "Streams: B.Tech / B.E. - CS & IT, MCA/M.Sc. - CS/IT\nAverage of 10th and 12th: 80%\nBond: 3 years\n\nWe're looking for a curious, automation-obsessed engineer who loves making systems reliable and repeatable. You'll learn cloud, containers, and CI/CD hands-on — paired with senior DevOps mentors and real production workloads.\n\n**What You'll Do**",
+    "metadata": {
+      "pageNumber": 5,
+      "h1": null,
+      "h2": null,
+      "h3": null,
+      "chunkIndex": 1
+    }
+  },
+  {
+    "markdown": "**What You'll Do**\n\n*   Help build and maintain CI/CD pipelines using GitHub Actions, GitLab CI, or Jenkins\n*   Manage Linux servers — basic admin, shell scripting, log debugging\n*   Work with Docker — build images, write Dockerfiles, run containers\n*   Support AWS resources (EC2, S3, RDS, IAM) under senior guidance\n*   Automate repetitive tasks using Bash or Python scripts\n*   Monitor applications using tools like CloudWatch, Grafana, or Prometheus\n*   Assist with deployments, rollbacks, and incident response\n\n**What We're Looking For**",
+    "metadata": {
+      "pageNumber": 5,
+      "h1": null,
+      "h2": null,
+      "h3": null,
+      "chunkIndex": 2
+    }
+  },
+  {
+    "markdown": "**What We're Looking For**\n\n*   Solid understanding of Linux fundamentals — files, permissions, processes, networking\n*   Working knowledge of Git and branching workflows\n*   Basic experience with Docker and containerized apps\n*   Familiarity with at least one cloud provider (AWS / Azure / GCP)\n*   Comfort writing shell scripts and reading logs to debug issues\n*   Understanding of CI/CD concepts — build, test, deploy\n*   A problem-solving mindset and strong willingness to automate\n\n**Bonus Points**",
+    "metadata": {
+      "pageNumber": 5,
+      "h1": null,
+      "h2": null,
+      "h3": null,
+      "chunkIndex": 3
+    }
+  },
+  {
+    "markdown": "*   Exposure to Kubernetes, Helm, or container orchestration\n*   Experience with Terraform or Ansible (Infrastructure as Code)\n*   Familiarity with Nginx, load balancers, or reverse proxies\n*   AWS / Azure / GCP certifications (Cloud Practitioner, etc.)\n*   Personal homelab, side projects, or contributions to open-source tooling\n\n**What You'll Get**\n*   A dedicated mentor and hands-on exposure to production systems\n*   Room to break things in staging — and learn how to fix them\n*   A clear growth path into a mid-level DevOps / SRE engineer\n\n7. **Full-Stack Developer**\n\nStreams: B.Tech / B.E. - CS, IT & EC, MCA/M.Sc. - CS/IT\nAverage of 10th and 12th: 80%\nBond: 3 years",
+    "metadata": {
+      "pageNumber": 6,
+      "h1": null,
+      "h2": null,
+      "h3": null,
+      "chunkIndex": 0
+    }
+  },
+  {
+    "markdown": "**About the Role:**\nWe are seeking a versatile and detail-oriented Full-Stack Website Developer with a deep understanding of WordPress, PHP/Laravel, and Node.js. In this role, you will be responsible for building, maintaining, and optimizing a diverse range of web applications—from high-performance WordPress sites to custom-built Laravel platforms and scalable Node.js services.\nBeyond core development, you will ensure our digital ecosystem is technically sound, secure, and optimized for search engines. You will work at the intersection of design, marketing, and engineering to deliver seamless user experiences and robust backend architecture.",
+    "metadata": {
+      "pageNumber": 6,
+      "h1": null,
+      "h2": null,
+      "h3": null,
+      "chunkIndex": 1
+    }
+  },
+  {
+    "markdown": "**Key Responsibilities**\n*   Multi-Platform Development: Design, develop, and maintain responsive WordPress websites and custom web applications using PHP (Laravel) and Node.js.\n*   Custom Architecture: Build custom WordPress themes/plugins and develop scalable RESTful APIs and microservices.\n*   Technical SEO: Implement and manage Technical SEO best practices, including site speed optimization, schema markup, and advanced crawlability.\n*   Database Management: Design and optimize relational (MySQL/PostgreSQL) and non-relational (MongoDB) databases.\n*   Systems Integration: Seamlessly integrate third-party APIs, payment gateways, and internal tools across different tech stacks.",
+    "metadata": {
+      "pageNumber": 6,
+      "h1": null,
+      "h2": null,
+      "h3": null,
+      "chunkIndex": 2
+    }
+  },
+  {
+    "markdown": "*   Performance & Security: Perform regular audits to troubleshoot site speed, security vulnerabilities, and server-side bottlenecks.\n*   DevOps Ops & Maintenance: Manage hosting environments (cPanel, AWS, or DigitalOcean), version control (Git), and deployment pipelines (CI/CD).\n*   Collaboration: Partner with UI/UX designers to translate wireframes into high-quality code and assist marketing teams in conversion rate optimization (CRO).",
+    "metadata": {
+      "pageNumber": 6,
+      "h1": null,
+      "h2": null,
+      "h3": null,
+      "chunkIndex": 3
+    }
+  },
+  {
+    "markdown": "**Required Skills & Qualifications:**\n\nTechnical Proficiency\n\n- WordPress: Expert-level knowledge of CMS architecture, custom theme development, and Gutenberg blocks.\n\n- PHP - PHP & Laravel: Strong experience in MVC frameworks, Eloquent ORM, and building secure, scalable backend systems.\n\n- Node.js: Proficiency in building server-side applications, real-time features (Socket.io), and managing packages via NPM/Yarn.\n\n- Frontend Fundamentals: Advanced HTML5, CSS3 (SASS/Tailwind), and JavaScript (ES6+).\n\n- Database  Database & Infrastructure: Solid understanding of MySQL, PHPMyAdmin, Git workflow, and staging-to-production environments.",
+    "metadata": {
+      "pageNumber": 7,
+      "h1": null,
+      "h2": null,
+      "h3": null,
+      "chunkIndex": 0
+    }
+  },
+  {
+    "markdown": "- SEO & Analytics: Deep knowledge of Technical SEO (Core Web Vitals, JSON-LD, Robots.txt) and performance tools like Lighthouse.\n\nSoft Skills\n\n- Problem-Solving: A proactive mindset geared toward debugging complex logic and architectural issues.\n\n- Adaptability: Ability to switch context between different programming languages and project types efficiently.\n\n- Time Management: Proven track record of handling multiple sprints and meeting tight deadlines.\n\n- Communication: Ability to explain technical constraints to non-technical stakeholders clearly.\n\n**Nice-to-Have**\n\n- Experience with headless CMS architectures (e.g., WordPress + React/Next.js).",
+    "metadata": {
+      "pageNumber": 7,
+      "h1": null,
+      "h2": null,
+      "h3": null,
+      "chunkIndex": 1
+    }
+  },
+  {
+    "markdown": "**Nice-to-Have**\n\n- Experience with headless CMS architectures (e.g., WordPress + React/Next.js).\n\n- Familiarity with Docker or containerization for local development.\n\n- Knowledge of AWS services (EC2, S3, Lambda).\n\n- Experience in the [insert industry: e.g., FinTech, E-commerce, or Automation] sector.\n\n8. **Quality Analyst**\n\nStreams: B.Tech / B.E. - CS, IT & EC, MCA/M.Sc. (Computer Science/IT), BCA/B.Sc. - Computer Science / IT/B.Sc. - Computer Science / IT/B.Sc. - Computer Science / IT/B.Sc - Computer Science/IT\nAverage of 10th and 12th: 75%\nBond: 3 years\n\n**Job Roles & Responsibilities:**\n\nTeam 1:",
+    "metadata": {
+      "pageNumber": 7,
+      "h1": null,
+      "h2": null,
+      "h3": null,
+      "chunkIndex": 2
+    }
+  },
+  {
+    "markdown": "## About the Role\n\nWe are a fast-growing, innovative Healthcare IT company that builds and maintains enterprise-grade Electronic Health Record (EHR) systems used by US clinics. Our software directly impacts clinical safety, doctor efficiency, and patient care.\n\nWe are looking for a detail-oriented and analytical Manual QA Tester to join our engineering team. In this role, you will play a critical part in maintaining our software quality by ensuring all products meet strict functional and user experience standards before they go live. You will work closely with developers and product managers to analyze requirements, hunt down defects, and advocate for the end-user.",
+    "metadata": {
+      "pageNumber": 8,
+      "h1": null,
+      "h2": "About the Role",
+      "h3": null,
+      "chunkIndex": 0
+    }
+  },
+  {
+    "markdown": "## Key Responsibilities\n\n- User Story Analysis: Review and analyze user stories, requirements, and acceptance criteria to ensure they are clear and testable.\n\n- Test Documentation: Design, write, and maintain comprehensive Test Plan and Test Case Documentation for new and existing features.\n\n- Test Execution: Conduct thorough manual testing, including functional, regression, integration, and cross-browser testing.\n\n- Defect Management: Execute precise Defect Identification and Verification, logging clear and actionable bugs, and working with developers to resolve them.",
+    "metadata": {
+      "pageNumber": 8,
+      "h1": null,
+      "h2": "Key Responsibilities",
+      "h3": null,
+      "chunkIndex": 1
+    }
+  },
+  {
+    "markdown": "- Root Cause Analysis: Go beyond \"reporting bugs\" by investigating backend databases using SQL and analyzing API payloads to provide developers with highly technical, reproducible defect reports.\n\n- Domain Learning: Actively learn complex US healthcare workflows, including HIPAA compliance, clinical charting, and interoperability standards (HL7).",
+    "metadata": {
+      "pageNumber": 8,
+      "h1": null,
+      "h2": "Key Responsibilities",
+      "h3": null,
+      "chunkIndex": 2
+    }
+  },
+  {
+    "markdown": "## Qualifications  Qualifications & Skills\n\nTechnical Requirements:\n\n- Core QA Knowledge: Solid understanding of basic software testing concepts, the Software Development Life Cycle (SDLC), and the Software Testing Life Cycle (STLC).\n\n- Basic SQL: Proficiency in writing SQL queries for backend database validation.\n\n- Basic Programming: Understanding of concepts to better communicate with developers and understand system architecture.\n\n- Analytical Mindset: You love breaking things, finding edge cases, and asking \"What what happens if I click this?\"",
+    "metadata": {
+      "pageNumber": 8,
+      "h1": null,
+      "h2": "Qualifications  Qualifications & Skills",
+      "h3": null,
+      "chunkIndex": 3
+    }
+  },
+  {
+    "markdown": "- Analytical Mindset: You love breaking things, finding edge cases, and asking \"What what happens if I click this?\"\n\n- Communication: Excellent written and verbal English communication skills (crucial for writing clear bug reports and collaborating with the team).\n\n- Experience conducting Cross-Browser Testing and familiarity with basic API Testing.\n\nCore Competencies:\n\n- Attention to Detail: A sharp eye for spotting UI/UX inconsistencies and edge cases.\n\n- Critical Analysis and Thinking: The ability to evaluate software from multiple angles and anticipate potential failure points.\n\n- Analytical  Analytical & Problem Solving: Strong capability to trace issues to their root cause and",
+    "metadata": {
+      "pageNumber": 8,
+      "h1": null,
+      "h2": "Qualifications  Qualifications & Skills",
+      "h3": null,
+      "chunkIndex": 4
+    }
+  },
+  {
+    "markdown": "suggest viable solutions.\n- Communication Skills: Excellent verbal and written communication skills to articulate technical issues clearly to both technical and non-technical stakeholders.",
+    "metadata": {
+      "pageNumber": 9,
+      "h1": null,
+      "h2": null,
+      "h3": null,
+      "chunkIndex": 0
+    }
+  },
+  {
+    "markdown": "## Team 2:",
+    "metadata": {
+      "pageNumber": 9,
+      "h1": null,
+      "h2": "Team 2:",
+      "h3": null,
+      "chunkIndex": 1
+    }
+  },
+  {
+    "markdown": "### Key Responsibilities\nAs an Entry-Level Quality Analyst, you will work closely with development and product teams to deliver robust and fault-free software. Your responsibilities will include:\n- Test Design and Execution: Creating, executing, and maintaining test cases and test scripts for new and existing product features.\n- End-to-End Defect Management: Identify, document, and track software defects. You won't just report bugs; you'll analyze their impact on the business process.\n- Test Planning: Assisting in the preparation of test plans and test strategies under the guidance of senior QA engineers.",
+    "metadata": {
+      "pageNumber": 9,
+      "h1": null,
+      "h2": "Team 2:",
+      "h3": "Key Responsibilities",
+      "chunkIndex": 2
+    }
+  },
+  {
+    "markdown": "- Cross-Functional Collaboration: Collaborating with software developers, product managers, and other stakeholders to understand product requirements and ensure quality throughout the software development lifecycle.\n- Bridging the Gap: Convert business needs into User Stories and Functional Requirement Specifications (FRS) that developers can easily follow.\n- Joint Requirement Validation: Actively participate in the Requirement Validation and Sign-off process, collaborating directly with Business Analysts and Development teams to eliminate ambiguities early.",
+    "metadata": {
+      "pageNumber": 9,
+      "h1": null,
+      "h2": "Team 2:",
+      "h3": "Key Responsibilities",
+      "chunkIndex": 3
+    }
+  },
+  {
+    "markdown": "- Manual & Functional Testing: Perform rigorous manual testing to ensure the product is intuitive, user-friendly, and \"fit for purpose.\"\n- Process Improvement: Contributing to the continuous improvement of the QA process and automation efforts.\n- Regression & Risk Analysis: Perform thorough regression testing and provide \"Go/No-Go\" recommendations for product releases.\n- User Acceptance (UAT): Coordinate with end-users to validate that the delivered software meets the original business objectives.",
+    "metadata": {
+      "pageNumber": 9,
+      "h1": null,
+      "h2": "Team 2:",
+      "h3": "Key Responsibilities",
+      "chunkIndex": 4
+    }
+  },
+  {
+    "markdown": "### Required Qualifications\nTo be eligible for this position through the campus drive, you must meet the following criteria:\n- Solid understanding of software development life cycles (SDLC) and QA methodologies.\n- Excellent problem-solving, analytical, and communication skills (both written and verbal).\n- A strong desire to learn and adapt to new technologies and tools quickly.\n\nSkill Set\n- SDLC Concepts: A solid theoretical understanding of Software Engineering and the Software Development Life Cycle.\n- Logical Reasoning: Strong ability to break down complex problems into small, manageable parts.",
+    "metadata": {
+      "pageNumber": 9,
+      "h1": null,
+      "h2": "Team 2:",
+      "h3": "Required Qualifications",
+      "chunkIndex": 5
+    }
+  },
+  {
+    "markdown": "- Documentation Basics: Knowledge of how to structure a Test Case (Steps, Expected Result, Actual Result), Bug/defect logging.\n- Testing Fundamentals: Familiarity with the concepts of Functional, Regression, and Sanity testing.\n- Research  Research & Curiosity: A natural drive to master new domains and understand how different industries work.\n- Clear Communication: Ability to explain a problem clearly, whether in writing (bug reports) or speaking (team meetings).\n- Analytical Mindset: Exceptional problem-solving skills and logical reasoning.\n- Understanding of SQL and database concepts.\n\n**Preferred Skills (A Plus, but not mandatory)**",
+    "metadata": {
+      "pageNumber": 10,
+      "h1": null,
+      "h2": null,
+      "h3": null,
+      "chunkIndex": 0
+    }
+  },
+  {
+    "markdown": "**Preferred Skills (A Plus, but not mandatory)**\n\nCandidates with the following skills may have an advantage:\n\n- Certifications: Any formal training or certification in Software Testing (Manual or Automation).\n- Prototyping: Ability to visualize an idea through simple diagrams or flowcharts.\n\n**9. Business Development Executive (Night Shift)**\n\nStreams: Any Stream\nAverage of 10th and 12th: 65%\nBond: 3 years",
+    "metadata": {
+      "pageNumber": 10,
+      "h1": null,
+      "h2": null,
+      "h3": null,
+      "chunkIndex": 1
+    }
+  },
+  {
+    "markdown": "**9. Business Development Executive (Night Shift)**\n\nStreams: Any Stream\nAverage of 10th and 12th: 65%\nBond: 3 years\n\n**We’re Hiring BDE for the USA!**\nTurn Conversations Into Commissions.\nTurn Ambition Into 7-Figures.\nThink big. Sell smart. Grow globally!\nMeditab is on the hunt for a Business Development Executive for the US Healthcare industry who turns opportunities into results and ambition into rewards.\n\nThis Opportunity Includes:\n- Attractive monthly commissions in USD (because your hustle deserves dollars, not just applause).\n- US healthcare market exposure, where you work with clients who value innovation and pay in the world's strongest currency.",
+    "metadata": {
+      "pageNumber": 10,
+      "h1": null,
+      "h2": null,
+      "h3": null,
+      "chunkIndex": 2
+    }
+  },
+  {
+    "markdown": "The Profile We're After:\nWe're not looking for order-takers. We're looking for storytellers, closers, and dreamers who know that every \"no\" is just a step closer to \"yes.\"\n\n**If You've Got:**\n- Hunger to crush targets, as mediocrity isn't in your vocabulary.\n- Excellent communication skills. You don't just talk; you connect through storytelling,",
+    "metadata": {
+      "pageNumber": 10,
+      "h1": null,
+      "h2": null,
+      "h3": null,
+      "chunkIndex": 3
+    }
+  },
+  {
+    "markdown": "empathy, and active listening.\n- Passion to work with US clients, armed with deep product knowledge and sales psychology that closes deals.\n- Self-motivated and adaptable, where you pivot like a pro and own every opportunity.\n\nWhy This Role Is Different:\n\nThis isn't just another sales job. This is where top performers are paid what they're worth. Every deal you close adds dollars to your pocket. Every client you win expands your empire. Every month is a new chance to rewrite your income story. Your pipeline is your paycheck. Your performance is your power.",
+    "metadata": {
+      "pageNumber": 11,
+      "h1": null,
+      "h2": null,
+      "h3": null,
+      "chunkIndex": 0
+    }
+  },
+  {
+    "markdown": "Join a team where closers become earners, and earners become legends. Ready to Make It Happen? Stop dreaming about what could be. Start building what will be.\n\nPlease find the attached JD below:\n**Key Skills Required:**\n- Excellent verbal and written communication / presentation skills\n- Active Listening, customer focused and customer centric\n- Rapport building on the call\n- Product demonstration\n- Time management\n- Strategic Prospecting\n- Objection handling",
+    "metadata": {
+      "pageNumber": 11,
+      "h1": null,
+      "h2": null,
+      "h3": null,
+      "chunkIndex": 1
+    }
+  },
+  {
+    "markdown": "**Roles and Responsibilities:**\n- Call potential clients and create an effective pipeline\n- Maintains existing client relationship by providing on-going consultation\n- Maintains accurate and organized documentation on all clients in CRM\n- Uses effective communication approaches that include expressing ideas and thoughts verbally and in written form\n- Participates in special projects, as needed.\n\n**10. UI/UX Designer**",
+    "metadata": {
+      "pageNumber": 11,
+      "h1": null,
+      "h2": null,
+      "h3": null,
+      "chunkIndex": 2
+    }
+  },
+  {
+    "markdown": "**10. UI/UX Designer**\n\nStreams: B.Tech / B.E. - CS, IT, EC, Mechanical, Electronics, Electrical, Mechatronics, MCA/M.Sc. (Computer Science/IT), BCA/B.Sc. - Computer Science / IT/B.Sc. - Computer Science / IT/B.Sc. - Computer Science / IT, M.Tech/M.E. (Related Fields)\nAverage of 10th and 12th: 70%\nBond: 3 years",
+    "metadata": {
+      "pageNumber": 11,
+      "h1": null,
+      "h2": null,
+      "h3": null,
+      "chunkIndex": 3
+    }
+  },
+  {
+    "markdown": "We're hiring a curious, user-obsessed designer at the start of their journey. You'll learn by doing — shadowing senior designers, running your first usability tests, and shipping real features to real users from day one.",
+    "metadata": {
+      "pageNumber": 12,
+      "h1": null,
+      "h2": null,
+      "h3": null,
+      "chunkIndex": 0
+    }
+  },
+  {
+    "markdown": "##  What You'll Do",
+    "metadata": {
+      "pageNumber": 12,
+      "h1": null,
+      "h2": "What You'll Do",
+      "h3": null,
+      "chunkIndex": 1
+    }
+  },
+  {
+    "markdown": "###  UX — where you'll grow most\n\n*    Observe user interviews and usability sessions; graduate to running your own\n*    Sketch user flows, journey maps, and low-fidelity wireframes\n*    Build clickable prototypes to test ideas quickly\n*    Synthesize research notes into clear, actionable insights\n*    Ask why — a lot. Good questions matter more than perfect answers.",
+    "metadata": {
+      "pageNumber": 12,
+      "h1": null,
+      "h2": "What You'll Do",
+      "h3": "UX — where you'll grow most",
+      "chunkIndex": 2
+    }
+  },
+  {
+    "markdown": "###  UI — supporting craft\n\n*    Design clean screens using our existing design system\n*    Maintain consistency across components, spacing, and states\n*    Keep accessibility (WCAG basics) in mind from the first draft",
+    "metadata": {
+      "pageNumber": 12,
+      "h1": null,
+      "h2": "What You'll Do",
+      "h3": "UI — supporting craft",
+      "chunkIndex": 3
+    }
+  },
+  {
+    "markdown": "##  What We're Looking For\n\n*    A portfolio or college/bootcamp projects that show how you think, not just final screens\n*    Working knowledge of Figma and Adobe XD\n*    Basic grasp of user-centered design, visual hierarchy, and accessibility\n*    Willingness to receive feedback and iterate fast\n*    Clear written and verbal communication",
+    "metadata": {
+      "pageNumber": 12,
+      "h1": null,
+      "h2": "What We're Looking For",
+      "h3": null,
+      "chunkIndex": 4
+    }
+  },
+  {
+    "markdown": "##  Bonus Points\n\n*    Personal side projects or redesign case studies\n*    Familiarity with design tokens, auto-layout, or prototyping interactions\n*    Any exposure to HTML/CSS (helpful, not required)",
+    "metadata": {
+      "pageNumber": 12,
+      "h1": null,
+      "h2": "Bonus Points",
+      "h3": null,
+      "chunkIndex": 5
+    }
+  },
+  {
+    "markdown": "##  What You'll Get\n\n*    A dedicated mentor and structured design critiques\n*    Real product ownership — not just pushing pixels\n*    Room to fail, learn, and grow into a Senior Designer",
+    "metadata": {
+      "pageNumber": 12,
+      "h1": null,
+      "h2": "What You'll Get",
+      "h3": null,
+      "chunkIndex": 6
+    }
+  },
+  {
+    "markdown": "##  11. Video Editor\n\n Streams: B.Tech/B.E. (Computer Science), B.Tech/B.E. (Information Technology), BCA/B.Sc. - Computer Science / IT/B.Sc. - Computer Science / IT/B.Sc. - Computer Science / IT, MCA/M.Sc. (Computer Science/IT) Average of 10th and 12th: 70% Bond: 3 years\n\n** Salary: Up to 6.09 CTC upon graduation**\n\n About the Role",
+    "metadata": {
+      "pageNumber": 12,
+      "h1": null,
+      "h2": "11. Video Editor",
+      "h3": null,
+      "chunkIndex": 7
+    }
+  },
+  {
+    "markdown": "We are looking for a highly motivated, creative, and \"internet-native\" Video Editor to join our production team. This is an entry-level position (0–1 year of experience) perfect for a recent graduate or a self-taught editor looking to turn their passion for visual storytelling into a career. You will be responsible for transforming raw footage into polished, engaging content for social media, internal projects, and digital advertisements. We aren’t just looking for someone who can cut clips—we want someone with a \"good eye,\" attention to detail, a sense of rhythm, and an eagerness to learn professional workflows in a fast-paced environment.",
+    "metadata": {
+      "pageNumber": 13,
+      "h1": null,
+      "h2": null,
+      "h3": null,
+      "chunkIndex": 0
+    }
+  },
+  {
+    "markdown": "## Key Responsibilities",
+    "metadata": {
+      "pageNumber": 13,
+      "h1": null,
+      "h2": "Key Responsibilities",
+      "h3": null,
+      "chunkIndex": 1
+    }
+  },
+  {
+    "markdown": "*   Content Assembly: Edit raw footage into high-quality videos, focusing on pacing, narrative flow, and brand consistency.\n*   Short-Form Specialization: Create \"thumb-stopping\" content for TikTok, Reels, and YouTube Shorts, including adding subtitles, captions, and on-screen graphics.\n*   Basic Post-Production: Perform basic color correction, sound leveling, and audio cleaning to ensure professional output.\n*   Asset Management: Organize raw media, project files, and backups according to team naming conventions and folder structures.\n*   Collaborative Revision: Take creative direction and constructive feedback from senior editors and stakeholders to iterate on drafts quickly.",
+    "metadata": {
+      "pageNumber": 13,
+      "h1": null,
+      "h2": "Key Responsibilities",
+      "h3": null,
+      "chunkIndex": 2
+    }
+  },
+  {
+    "markdown": "*   Trend Integration: Stay active on social platforms to identify and implement trending editing styles, transitions, and memes.\n*   Export & Delivery: Optimize and export videos in various formats and aspect ratios based on platform requirements (9:16, 16:9, 1:1).",
+    "metadata": {
+      "pageNumber": 13,
+      "h1": null,
+      "h2": "Key Responsibilities",
+      "h3": null,
+      "chunkIndex": 3
+    }
+  },
+  {
+    "markdown": "## Required Skills  Skills & Qualifications\n\n*   Experience: 0–1 year (Internships, freelance projects, or a strong personal YouTube/TikTok channel are all valid).",
+    "metadata": {
+      "pageNumber": 13,
+      "h1": null,
+      "h2": "Required Skills  Skills & Qualifications",
+      "h3": null,
+      "chunkIndex": 4
+    }
+  },
+  {
+    "markdown": "### Software Knowledge:\n\n*   Primary: Proficiency in Adobe Premiere Pro or DaVinci Resolve.\n*   Supporting: Basic understanding of Adobe After Effects (for simple text animation) and Photoshop.\n*   Technical Fundamentals: Understanding of frame rates, resolutions, aspect ratios, and video codecs.\n*   Creative Instinct: A strong sense of timing, music synchronization, and visual storytelling.\n*   Work Ethic: Ability to work under tight deadlines and manage multiple small projects simultaneously.\n*   Portfolio: A link to a demo reel or a portfolio of recent work (even if it’s personal projects) is mandatory.",
+    "metadata": {
+      "pageNumber": 13,
+      "h1": null,
+      "h2": "Required Skills  Skills & Qualifications",
+      "h3": "Software Knowledge:",
+      "chunkIndex": 5
+    }
+  },
+  {
+    "markdown": "## Nice-to-Have\n\n*   Motion Graphics: Ability to create custom lower thirds or basic animated intros.\n*   AI Proficiency: Experience using AI tools for transcription (like Descript), generative fill, or AI voiceovers.\n*   Camera Knowledge: Basic understanding of videography, lighting, and framing.",
+    "metadata": {
+      "pageNumber": 13,
+      "h1": null,
+      "h2": "Nice-to-Have",
+      "h3": null,
+      "chunkIndex": 6
+    }
+  },
+  {
+    "markdown": "*   Niche Interest: Passion for [insert industry: e.g., gaming, fashion, tech, or documentary storytelling].\n*   Education: A degree or diploma in Film, Media Production, or Digital Design (though talent and portfolio trump formal education).",
+    "metadata": {
+      "pageNumber": 14,
+      "h1": null,
+      "h2": null,
+      "h3": null,
+      "chunkIndex": 0
+    }
+  },
+  {
+    "markdown": "## 12. Email Marketer\n**Streams:** B.Tech/B.E. (Computer Science), B.Tech/B.E. (Information Technology), BCA/B.Sc. - Computer Science / IT/B.Sc. - Computer Science / IT/B.Sc. - Computer Science / IT, MCA/M.Sc. (Computer Science/IT)\nAverage of 10th and 12th: 70%\nBond: 3 years\nSalary: **Up to 6.09 CTC** upon graduation",
+    "metadata": {
+      "pageNumber": 14,
+      "h1": null,
+      "h2": "12. Email Marketer",
+      "h3": null,
+      "chunkIndex": 1
+    }
+  },
+  {
+    "markdown": "### Job Summary\nWe are seeking a results-driven and analytical HubSpot Email Marketing Expert to take the lead on our email marketing strategies and execution. This role demands deep hands-on experience with the HubSpot platform to develop, implement, and optimize campaigns that drive engagement, generate leads, and foster customer retention. The ideal candidate will blend strategic thinking with technical proficiency to ensure every email aligns with our brand voice and achieves measurable business results.",
+    "metadata": {
+      "pageNumber": 14,
+      "h1": null,
+      "h2": "12. Email Marketer",
+      "h3": "Job Summary",
+      "chunkIndex": 2
+    }
+  },
+  {
+    "markdown": "### Key Responsibilities\n*   Strategy & Execution: Develop and implement an overall email marketing strategy and messaging framework using HubSpot.\n*   Campaign Management: Plan, build, and execute end-to-end email marketing campaigns, including newsletters, promotional offers, lead nurturing sequences, and automated triggered messages.\n*   HubSpot Optimization: Manage and optimize our HubSpot portal, including workflows, automations, contact/company segmentation, and CRM with ERP integrations.\n*   Audience Segmentation: Segment email lists based on customer behavior, demographics, and engagement levels to ensure personalized and targeted communication.",
+    "metadata": {
+      "pageNumber": 14,
+      "h1": null,
+      "h2": "12. Email Marketer",
+      "h3": "Key Responsibilities",
+      "chunkIndex": 3
+    }
+  },
+  {
+    "markdown": "*   Content    Content & Design: Craft compelling email copy and collaborate with content and design teams to create visually appealing, mobile-responsive email templates that align with brand guidelines.\n*   A/B Testing  Testing & Optimization: Conduct A/B testing on various email elements (subject lines, content, send times, etc.) to optimize performance, document results, and provide actionable insights for improvement.\n*   Performance Analysis & Reporting: Monitor and analyze key email marketing metrics (open rates, click-through rates, conversion rates, deliverability, ROI, etc.), creating comprehensive reports and dashboards for stakeholders.",
+    "metadata": {
+      "pageNumber": 14,
+      "h1": null,
+      "h2": "12. Email Marketer",
+      "h3": "Key Responsibilities",
+      "chunkIndex": 4
+    }
+  },
+  {
+    "markdown": "*   Collaboration: Work closely with cross-functional teams, including sales, content, and design, to ensure email strategies align with broader marketing initiatives.",
+    "metadata": {
+      "pageNumber": 14,
+      "h1": null,
+      "h2": "12. Email Marketer",
+      "h3": "Key Responsibilities",
+      "chunkIndex": 5
+    }
+  },
+  {
+    "markdown": "**Required Skills and Qualifications**\n*   Bachelor's degree in Marketing, Communications, or a related field.\n*   Expert-level proficiency in HubSpot's Marketing Hub, particularly with email, workflows, and automation tools.\n*   Excellent written communication and copywriting skills, with a keen eye for detail.\n*   Basic knowledge of HTML and CSS for email template customization and troubleshooting is a plus.\n*   Strong project management skills and the ability to manage multiple campaigns and deadlines simultaneously.",
+    "metadata": {
+      "pageNumber": 15,
+      "h1": null,
+      "h2": null,
+      "h3": null,
+      "chunkIndex": 0
+    }
+  },
+  {
+    "markdown": "**Preferred Qualifications**\n*   HubSpot Email Marketing Certification or other relevant certifications.\n*   Experience with CRM systems and an understanding of data flow between marketing automation and sales platforms.\n\n**13. Content Writer**\n\nStreams: B.Tech/B.E. (Computer Science), B.Tech/B.E. (Information Technology), BCA/B.Sc. - Computer Science / IT/B.Sc. - Computer Science / IT/B.Sc. - Computer Science / IT, MCA/M.Sc. (Computer Science/IT)\nAverage of 10th and 12th: 70%\nBond: 3 years\nSalary: **Up to 6.09 CTC** upon graduation",
+    "metadata": {
+      "pageNumber": 15,
+      "h1": null,
+      "h2": null,
+      "h3": null,
+      "chunkIndex": 1
+    }
+  },
+  {
+    "markdown": "**What You’ll Do (AKA Your Mission):**\n*   Write with Purpose: Create blog posts, captions, and more that educate, entertain, and drive action.\n*   Research Like a Pro: Dive deep into trends, tools, and topics to craft content that resonates.\n*   SEO Magic: Learn the ropes of SEO and help us climb to the top of search results.\n*   Creative Brainstorms: Bring your wildest, wittiest ideas to the table—no idea is too out there!\n*   Social Media Swagger: Write content that stops scrollers in their tracks and sparks conversation.\n*   Edit, Edit, Edit: Collaborate with us to polish and perfect your content.",
+    "metadata": {
+      "pageNumber": 15,
+      "h1": null,
+      "h2": null,
+      "h3": null,
+      "chunkIndex": 2
+    }
+  },
+  {
+    "markdown": "**Who You Are (AKA Our Ideal Candidate):**\n*   A Word Nerd: You live for the perfect sentence and love finding just the right word.\n*   Curious: You’re ready to dive into topics, from trends to tech.\n*   A Creative Thinker: Whether it’s content or brainstorming, your imagination knows no limits.\n*   A Research Rock Star: You know how to dig deep and bring back the best insights.\n*   A Deadline Juggler: You can juggle multiple tasks and deliver great content on time.\n\n**What You’ll Get (AKA The Perks):**\n*   Real-World Experience: Your content will reach real audiences - not just search engines.\n*   Mentorship & Growth: Learn from a supportive team and get feedback to level up.",
+    "metadata": {
+      "pageNumber": 15,
+      "h1": null,
+      "h2": null,
+      "h3": null,
+      "chunkIndex": 3
+    }
+  },
+  {
+    "markdown": "* A Portfolio to Be Proud Of: Walk away with solid examples of your work.\n* Team Vibes: Collaborate with a fun, innovative team that values creativity and impact.\n* Potential for Full-Time: Impress us, and you could snag a full-time role down the line!\n\nReady to join the team? Let’s make content that matters!",
+    "metadata": {
+      "pageNumber": 16,
+      "h1": null,
+      "h2": null,
+      "h3": null,
+      "chunkIndex": 0
+    }
+  },
+  {
+    "markdown": "## 14. Motion Graphic Designer\n\nStreams: B.Tech/B.E. (Computer Science), B.Tech/B.E. (Information Technology), BCA/B.Sc. - Computer Science / IT/B.Sc. - Computer Science / IT/B.Sc. - Computer Science / IT, MCA/M.Sc. (Computer Science/IT)\nAverage of 10th and 12th: 70%\nBond: 3 years\nSalary: Up to **6.09 CTC** upon graduation",
+    "metadata": {
+      "pageNumber": 16,
+      "h1": null,
+      "h2": "14. Motion Graphic Designer",
+      "h3": null,
+      "chunkIndex": 1
+    }
+  },
+  {
+    "markdown": "### About the Role\n\nWe are seeking a creative and detail-oriented Motion Graphics Designer to join our team. In this role, you will be responsible for conceptualizing, designing, and producing high-quality motion graphics, animations, and visual assets for digital content, product videos, marketing campaigns, and social media. You should have strong visual storytelling skills, deep understanding of motion design principles, and the ability to deliver polished content under fast timelines.",
+    "metadata": {
+      "pageNumber": 16,
+      "h1": null,
+      "h2": "14. Motion Graphic Designer",
+      "h3": "About the Role",
+      "chunkIndex": 2
+    }
+  },
+  {
+    "markdown": "### Key Responsibilities",
+    "metadata": {
+      "pageNumber": 16,
+      "h1": null,
+      "h2": "14. Motion Graphic Designer",
+      "h3": "Key Responsibilities",
+      "chunkIndex": 3
+    }
+  },
+  {
+    "markdown": "* Create engaging 2D/3D motion graphics, animations, and visual assets for product explainers, social media posts, promotional videos, and UI/UX animations.\n* Collaborate with the creative, product, and marketing teams to translate ideas into compelling motion design.\n* Produce clean storyboards, style frames, and motion concepts before final animation.\n* Edit and assemble video footage, including color correction, transitions, and sound syncing.\n* Optimize graphics and video output for various platforms (YouTube, social media, website, ads).\n* Maintain consistent brand identity across all motion deliverables.",
+    "metadata": {
+      "pageNumber": 16,
+      "h1": null,
+      "h2": "14. Motion Graphic Designer",
+      "h3": "Key Responsibilities",
+      "chunkIndex": 4
+    }
+  },
+  {
+    "markdown": "* Maintain consistent brand identity across all motion deliverables.\n* Work closely with scriptwriters and voiceover artists to align visuals with narrative.\n* Stay updated with motion design trends, tools, and animation techniques.\n* Handle multiple projects simultaneously and meet deadlines.",
+    "metadata": {
+      "pageNumber": 16,
+      "h1": null,
+      "h2": "14. Motion Graphic Designer",
+      "h3": "Key Responsibilities",
+      "chunkIndex": 5
+    }
+  },
+  {
+    "markdown": "### Required Skills  Required Skills & Qualifications\n\n* Bachelor’s degree in Animation, Design, Visual Communication, or a related field (preferred but not mandatory).\n* Strong proficiency in:\n    * Adobe After Effects\n    * Adobe Premiere Pro\n    * Adobe Illustrator  Illustrator & Photoshop\n    * Blender / Cinema 4D (optional but a strong plus)",
+    "metadata": {
+      "pageNumber": 16,
+      "h1": null,
+      "h2": "14. Motion Graphic Designer",
+      "h3": "Required Skills  Required Skills & Qualifications",
+      "chunkIndex": 6
+    }
+  },
+  {
+    "markdown": "*   Strong portfolio showcasing motion design work.\n*   Solid understanding of animation principles, typography, and visual communication.\n*   Ability to take feedback and iterate quickly.\n\n*   Excellent attention to detail and time management\n\n**Nice-to-Have**\n*   Experience with 3D animation, product visualization, or technical animations.\n*   Knowledge of UI/UX animation and micro-interactions.\n*   Familiarity with sound design tools.\n*   Illustration skills for character or icon animations.\n*   Experience working with brands in tech, healthcare, automation,\n\n**15. Graphic Designer**",
+    "metadata": {
+      "pageNumber": 17,
+      "h1": null,
+      "h2": null,
+      "h3": null,
+      "chunkIndex": 0
+    }
+  },
+  {
+    "markdown": "**15. Graphic Designer**\n\nStreams: B.Tech/B.E. (Computer Science), B.Tech/B.E. (Information Technology), BCA/B.Sc. - Computer Science / IT/B.Sc. - Computer Science / IT/B.Sc. - Computer Science / IT, MCA/M.Sc. (Computer Science/IT)\nAverage of 10th and 12th: 70%\nBond: 3 years\nSalary: **Up to 6.09 CTC** upon graduation\n\nWe are seeking a talented and creative Graphic Designer to join our team. The candidate will be responsible for developing compelling visual assets that align with our brand identity and effectively communicate our message to our target audience.",
+    "metadata": {
+      "pageNumber": 17,
+      "h1": null,
+      "h2": null,
+      "h3": null,
+      "chunkIndex": 1
+    }
+  },
+  {
+    "markdown": "**Key Responsibilities:**\n*   Create visually appealing designs for various marketing materials, including, but not limited to, brochures, packaging, digital ads, and social media graphics.\n*   Collaborate with the marketing and product teams to develop design concepts that support business objectives.\n*   Stay updated on design trends and industry best practices.\n*   Utilize design software proficiently to produce high-quality visuals.",
+    "metadata": {
+      "pageNumber": 17,
+      "h1": null,
+      "h2": null,
+      "h3": null,
+      "chunkIndex": 2
+    }
+  },
+  {
+    "markdown": "**Qualifications:**\n*   Proficiency in Adobe Creative Suite (Photoshop, Illustrator, InDesign) is essential.\n*   Excellent understanding of design principles, color theory, and typography.\n*   Strong attention to detail and a keen eye for visual aesthetics.\n*   Bachelor’s degree in Graphic Design or a related field is preferred.\n\n**Skills required:**\n*   Adobe Creative Suite: Photoshop, Illustrator, InDesign\n*   CorelDRAW",
+    "metadata": {
+      "pageNumber": 17,
+      "h1": null,
+      "h2": null,
+      "h3": null,
+      "chunkIndex": 3
+    }
+  },
+  {
+    "markdown": "* Figma or Sketch\n* Illustration Software: Procreate, Adobe Fresco\n* Color Theory\n* Typography\n* Layout and Composition\n* Print Design\n* Digital Design\n* Social Media Graphics\n* Image Editing and Manipulation\n* Branding and Identity\n* Illustration and Drawing\n\nWe are looking for a highly motivated individual with a passion for design and a strong ability to translate concepts into visually stunning materials.",
+    "metadata": {
+      "pageNumber": 18,
+      "h1": null,
+      "h2": null,
+      "h3": null,
+      "chunkIndex": 0
+    }
+  },
+  {
+    "markdown": "## 16. Technical Writer\n\nStreams: B.Tech/B.E. (Computer Science), B.Tech/B.E. (Information Technology), BCA/B.Sc. - Computer Science / IT/B.Sc. - Computer Science / IT/B.Sc. - Computer Science / IT, MCA/M.Sc. (Computer Science/IT)\nAverage of 10th and 12th: 70%\nBond: 3 years\nSalary: Up to **6.09 CTC** upon graduation\n\nWe are looking for a creative and detail-oriented technical writer to join our team. As a technical writer, you will help our users—internal teams, clients, and partners—understand how to use our products effectively. You will be responsible for delivering training sessions and producing high-quality product documentation and training videos.",
+    "metadata": {
+      "pageNumber": 18,
+      "h1": null,
+      "h2": "16. Technical Writer",
+      "h3": null,
+      "chunkIndex": 1
+    }
+  },
+  {
+    "markdown": "### Key Responsibilities:\n\n* Understand the features, workflows, and use cases of our products.\n* Create user-friendly product training documents, including manuals, how-to guides, SOPs, and quick reference sheets.\n* Produce engaging product training videos, screen recordings, and visual walkthroughs.\n* Conduct live or recorded training sessions for new employees, customers, and partners.\n* Work closely with the Product, Support, and Customer Success teams to stay informed about product updates.\n* Collect and incorporate feedback to improve training content and delivery.\n* Maintain and organize training assets in shared repositories or LMS platforms.",
+    "metadata": {
+      "pageNumber": 18,
+      "h1": null,
+      "h2": "16. Technical Writer",
+      "h3": "Key Responsibilities:",
+      "chunkIndex": 2
+    }
+  },
+  {
+    "markdown": "### Qualifications:",
+    "metadata": {
+      "pageNumber": 18,
+      "h1": null,
+      "h2": "16. Technical Writer",
+      "h3": "Qualifications:",
+      "chunkIndex": 3
+    }
+  },
+  {
+    "markdown": "- Bachelor’s degree in any discipline (preferably in Education, Communication, Business, or Technology).\n- Strong communication and presentation skills.\n- Ability to explain technical concepts in simple, user-friendly language.\n- Familiarity with tools like PowerPoint, Google Slides, Canva, or similar.\n- Willingness to learn video creation/editing tools.\n- Detail-oriented, organized, and a team player.",
+    "metadata": {
+      "pageNumber": 19,
+      "h1": null,
+      "h2": null,
+      "h3": null,
+      "chunkIndex": 0
+    }
+  },
+  {
+    "markdown": "## 17. SEO Executive",
+    "metadata": {
+      "pageNumber": 19,
+      "h1": null,
+      "h2": "17. SEO Executive",
+      "h3": null,
+      "chunkIndex": 1
+    }
+  },
+  {
+    "markdown": "### 17. SEO Executive\n\nStreams: B.Tech/B.E. (Computer Science), B.Tech/B.E. (Information Technology), BCA/B.Sc. - Computer Science / IT/B.Sc. - Computer Science / IT/B.Sc. - Computer Science / IT, MCA/M.Sc. (Computer Science/IT)\nAverage of 10th and 12th: 70%\nBond: 3 years\nSalary: **Up to 6.09 CTC** upon graduation",
+    "metadata": {
+      "pageNumber": 19,
+      "h1": null,
+      "h2": "17. SEO Executive",
+      "h3": "17. SEO Executive",
+      "chunkIndex": 2
+    }
+  },
+  {
+    "markdown": "### Key Responsibilities:\n#### Key Responsibilities:\n- Keyword Research: Conduct keyword research to identify opportunities for improving website content and ranking on search engines.\n- On-Page SEO: Assist in optimizing website content, including meta tags, headers, and internal linking structures.\n- Content Optimization: Collaborate with the content team to ensure SEO best practices are implemented in blog posts, landing pages, and other web content.\n- Technical SEO: Help identify and fix technical SEO issues, such as broken links, site speed optimization, and mobile usability.",
+    "metadata": {
+      "pageNumber": 19,
+      "h1": null,
+      "h2": "17. SEO Executive",
+      "h3": "Key Responsibilities:",
+      "chunkIndex": 3
+    }
+  },
+  {
+    "markdown": "- Competitor Analysis: Analyze competitors' SEO strategies and identify areas where DosePacker can improve its own.\n- Link Building: Assist in developing and executing link-building strategies to enhance domain authority.\n- Performance Monitoring: Use tools like Google Analytics, Google Search Console, and other SEO tools to monitor website performance, track keyword rankings, and report on SEO metrics.\n- Stay Updated: Keep up-to-date with the latest SEO trends, algorithm updates, and best practices.",
+    "metadata": {
+      "pageNumber": 19,
+      "h1": null,
+      "h2": "17. SEO Executive",
+      "h3": "Key Responsibilities:",
+      "chunkIndex": 4
+    }
+  },
+  {
+    "markdown": "### Qualifications:\n#### Qualifications:\n- Currently pursuing a degree in Marketing, Communications, Digital Media, or a related field.\n- Basic understanding of SEO principles and best practices.\n- Familiarity with SEO tools such as Google Analytics, Google Search Console, SEMrush, or Ahrefs is a plus.\n- Strong analytical and problem-solving skills.\n- Ability to work independently and as part of a team.\n- Eagerness to learn and adapt in a fast-paced environment.",
+    "metadata": {
+      "pageNumber": 19,
+      "h1": null,
+      "h2": "17. SEO Executive",
+      "h3": "Qualifications:",
+      "chunkIndex": 5
+    }
+  },
+  {
+    "markdown": "**Skills required:**\n\n*   Keyword research and analysis\n\n*   Ability to interpret SEO metrics and KPIs\n\n*   Experience with SEO tools (e.g., SEMrush, Ahrefs, Moz)\n\n*   Understanding of content marketing principles\n\n*   Basic understanding of web development languages (HTML, CSS)\n\n*   Ability to manage multiple projects simultaneously\n\n*   Ability to explain SEO concepts to non-technical team members\n\n*   Collaboration with various departments (content, development, marketing)\n\n18. **Social Media Content Creator**",
+    "metadata": {
+      "pageNumber": 20,
+      "h1": null,
+      "h2": null,
+      "h3": null,
+      "chunkIndex": 0
+    }
+  },
+  {
+    "markdown": "*   Collaboration with various departments (content, development, marketing)\n\n18. **Social Media Content Creator**\n\nStreams: B.Tech/B.E. (Computer Science), B.Tech/B.E. (Information Technology), BCA/B.Sc. - Computer Science / IT/B.Sc. - Computer Science / IT/B.Sc. - Computer Science / IT, MCA/M.Sc. (Computer Science/IT)\nAverage of 10th and 12th: 70%\nBond: 3 years\nSalary: **Up to 6.09 CTC** upon graduation\n\n**About the Role**",
+    "metadata": {
+      "pageNumber": 20,
+      "h1": null,
+      "h2": null,
+      "h3": null,
+      "chunkIndex": 1
+    }
+  },
+  {
+    "markdown": "**About the Role**\n\nWe are looking for a dynamic, trend-savvy Social Media Content Creator to lead our brand’s presence across digital platforms. In this role, you will be the voice and visual storyteller of our brand, responsible for producing high-energy, platform-specific content that drives engagement and builds community. The ideal candidate is a \"creative unicorn\" who can ideate, film, edit, and write—someone who understands why a hook works, how to jump on a trend before it peaks, and how to turn complex ideas into digestible, shareable moments.\n\n**Key Responsibilities**",
+    "metadata": {
+      "pageNumber": 20,
+      "h1": null,
+      "h2": null,
+      "h3": null,
+      "chunkIndex": 2
+    }
+  },
+  {
+    "markdown": "**Key Responsibilities**\n\n*   End-to-End Production: Concept, script, film, and edit short-form video content (Reels, TikToks, Shorts) and static assets.\n\n*   Trend Forecasting: Monitor social media trends, viral sounds, and platform updates to ensure our brand remains relevant and timely.\n\n*   Community Engagement: Write witty, on-brand captions and engage with our audience through comments and stories to foster a loyal community.\n\n*   Strategy & Analytics: Collaborate with the marketing team to develop content calendars and track performance metrics to optimize future posts.",
+    "metadata": {
+      "pageNumber": 20,
+      "h1": null,
+      "h2": null,
+      "h3": null,
+      "chunkIndex": 3
+    }
+  },
+  {
+    "markdown": "*   Brand Advocacy: Act as the \"on-camera\" talent when needed, or direct others to ensure the brand’s personality shines through.\n\n*   Platform Optimization: Tailor content specifically for the nuances of Instagram, TikTok, LinkedIn, and X (Twitter) to maximize reach and impact.\n\n*   Collaboration: Work with designers and copywriters to ensure all social assets align with broader marketing campaigns and brand guidelines.",
+    "metadata": {
+      "pageNumber": 20,
+      "h1": null,
+      "h2": null,
+      "h3": null,
+      "chunkIndex": 4
+    }
+  },
+  {
+    "markdown": "## Required Skills & Qualifications\n\nTechnical Proficiency:\n\n- Mobile Editing: CapCut, InShot, or Splice.\n- Design Tools: Canva or Adobe Express (Photoshop/Illustrator is a plus).\n- Native Tools: Expert-level knowledge of TikTok Creative Center and Instagram Reels features.\n- Storytelling: Proven ability to write engaging hooks and scripts that retain viewer attention.\n- Portfolio: A strong portfolio or \"social resume\" showcasing successful video content and creative growth.\n- Agility: Ability to pivot quickly based on trending news or real-time performance data.\n- Self-Starter: Highly organized with the ability to manage a high volume of deliverables independently.",
+    "metadata": {
+      "pageNumber": 21,
+      "h1": null,
+      "h2": "Required Skills & Qualifications",
+      "h3": null,
+      "chunkIndex": 0
+    }
+  },
+  {
+    "markdown": "### Nice-to-Have\n\n- Niche Expertise: Experience in [insert industry: e.g., SaaS, Lifestyle, E-commerce, or FinTech].\n- Photography Skills: Basic knowledge of lighting, framing, and product photography.\n- Paid Social Knowledge: Experience creating \"whitelisted\" or spark ads for paid social campaigns.\n- Influencer Relations: Experience sourcing and managing micro-influencer partnerships.\n- AI Tools: Familiarity with AI-driven tools for caption generation.",
+    "metadata": {
+      "pageNumber": 21,
+      "h1": null,
+      "h2": "Required Skills & Qualifications",
+      "h3": "Nice-to-Have",
+      "chunkIndex": 1
+    }
+  }
+]

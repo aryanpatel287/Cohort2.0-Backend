@@ -3,8 +3,9 @@ import 'dotenv/config';
 import LlamaCloud from '@llamaindex/llama-cloud';
 import fs from 'fs';
 import { MarkItDown } from 'markitdown-ts';
+import { processMarkdownPages } from './markdownSplitter.js';
 
-const filePath = './src/assets/wp_mini_project_report_48.pdf';
+const filePath = './src/assets/Campus Job Description - 2027.pdf';
 
 async function parsePdfByLlama(filePath) {
     const client = new LlamaCloud({
@@ -27,11 +28,11 @@ async function parsePdfByLlama(filePath) {
     console.log('Result: ', result);
     console.log(result.markdown.pages[0].markdown);
 
-    return result;
+    return result.markdown.pages;
 }
 
 // Function to save JSON to a file
-function saveResultToFile(data, filename = 'llama_output.json') {
+function saveResultToFile(data, filename = 'output.json') {
     fs.writeFileSync(filename, JSON.stringify(data, null, 2), 'utf-8');
     console.log(`Result saved to ${filename}`);
 }
@@ -57,4 +58,7 @@ async function parsePdfByMarkItDown(filePath) {
 }
 
 // Save the entire result to a JSON file
-saveResultToFile(await parsePdfByMarkItDown(filePath));
+
+const finalResult = await processMarkdownPages(await parsePdfByLlama(filePath));
+
+saveResultToFile(finalResult, 'llama_chunked_output.json');
