@@ -1,0 +1,36 @@
+{
+  "job": {
+    "id": "pjb-7x85ya70m8uwf667fsl7mo9mawlh",
+    "created_at": "2026-05-14T16:44:56.644520Z",
+    "updated_at": "2026-05-14T16:45:11.119538Z",
+    "project_id": "3b14f9c9-c126-4f5e-964c-87bf01a24943",
+    "status": "COMPLETED",
+    "error_message": null,
+    "name": "exact_two_page_story.pdf",
+    "tier": "cost_effective"
+  },
+  "result_content_metadata": null,
+  "text": null,
+  "markdown": {
+    "pages": [
+      {
+        "page_number": 1,
+        "markdown": "# The Watchmaker’s Promise\n\nIn the quiet town of Alderbrook stood a tiny watch shop hidden between a bakery and an old bookstore. The shop belonged to a man named Edwin Hale, a watchmaker known for repairing clocks that others considered impossible to fix.\n\nEvery morning at exactly seven, Edwin opened the wooden shutters, swept the front steps, and wound the large brass clock hanging above the door. The people of Alderbrook trusted him completely. Some visited for repairs, while others simply stopped by to hear the comforting ticking of hundreds of clocks filling the shop walls.\n\nOne rainy afternoon, a young girl entered carrying a broken pocket watch.\n\n“It belonged to my grandfather,” she explained softly. “It stopped the day he passed away.”\n\nEdwin carefully examined the watch beneath the warm yellow light of his workbench. The glass was cracked, and the tiny hands were frozen at 8:17.\n\n“I can repair it,” he said gently.\n\nThe girl smiled with relief.\n\nFor the next several days, Edwin worked on the watch late into the night. He replaced damaged gears, polished the silver casing, and repaired the delicate springs hidden inside. Yet despite all his effort, the watch refused to move.\n\nFrustrated, Edwin sat silently in his workshop while rain tapped against the windows.\n\nThen he noticed something carved inside the watch cover.\n\n“To those we love, time never truly ends.”\n\nEdwin paused for a long moment.\n\nHe realized the watch had never been valuable because it kept perfect time. It mattered because it carried memories.\n\nThe next morning, Edwin invited the young girl back to the shop.\n\nCarefully, he placed the repaired watch into her hands.",
+        "success": true
+      },
+      {
+        "page_number": 2,
+        "markdown": "“It may not run forever,” he admitted, “but neither do most things in life. What matters is what they remind us of.”\n\nThe girl opened the watch slowly.\n\nFor the first time in years, the tiny hands began moving again.\n\nHer eyes filled with tears.\n\n“Thank you,” she whispered.\n\nEdwin smiled quietly as the clocks around the shop continued ticking together in soft harmony.\n\nAnd in that small watch shop in Alderbrook, time seemed to move just a little more gently than everywhere else.",
+        "success": true
+      }
+    ]
+  },
+  "items": null,
+  "metadata": null,
+  "markdown_full": null,
+  "text_full": null,
+  "images_content_metadata": null,
+  "job_metadata": null,
+  "raw_parameters": null,
+  "debug": null
+}
