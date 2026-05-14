@@ -61,4 +61,4 @@ async function parsePdfByMarkItDown(filePath) {
 
 const finalResult = await processMarkdownPages(await parsePdfByLlama(filePath));
 
-saveResultToFile(finalResult, 'llama_chunked_output.json');
+saveResultToFile(finalResult, 'llama_chunked_final_output.json');
