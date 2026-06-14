@@ -1,24 +1,24 @@
-@use "../../shared/styles/_mixins.scss" as *;
+@use '../../shared/styles/_mixins.scss' as *;
 
 .active-user {
-  @include displayFlex(center, flex-start, row, 0.8rem);
-  flex-wrap: wrap;
+    @include displayFlex(center, flex-start, row, 0.8rem);
+    flex-wrap: wrap;
 }
 
 .active-user-name {
-  margin: 0;
-  font-size: 0.95rem;
-  color: #fff;
+    margin: 0;
+    font-size: 0.95rem;
+    color: #fff;
 }
 
 .active-user-loading {
-  margin: 0;
-  font-size: 0.9rem;
-  color: #cfcfcf;
+    margin: 0;
+    font-size: 0.9rem;
+    color: #cfcfcf;
 }
 
 @media (max-width: 560px) {
-  .active-user {
-    width: 100%;
-  }
+    .active-user {
+        width: 100%;
+    }
 }
