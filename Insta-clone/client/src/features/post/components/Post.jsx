@@ -22,8 +22,13 @@ const Post = ({ user, post, loading, handleLikePost, handleUnLikePost }) => {
             </div>
             <div className="post-actions-wrapper">
                 <div className="left">
-                    <button type="button" aria-label="Like post" className={post.isLiked ? "liked action-with-count" : "action-with-count"}>
-                        <i onClick={() => { post.isLiked ? handleUnLikePost(post._id) : handleLikePost(post._id) }} className={post.isLiked ? "ri-heart-fill" : "ri-heart-line"}></i>
+                    <button 
+                        type="button" 
+                        aria-label={post.isLiked ? "Unlike post" : "Like post"} 
+                        className={post.isLiked ? "liked action-with-count" : "action-with-count"}
+                        onClick={() => { post.isLiked ? handleUnLikePost(post._id) : handleLikePost(post._id) }}
+                    >
+                        <i className={post.isLiked ? "ri-heart-fill" : "ri-heart-line"}></i>
                         <span className="action-count">{post.likeCount}</span>
                     </button>
                     <button type="button" aria-label="Open comments" className="action-with-count">
