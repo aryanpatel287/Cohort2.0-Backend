@@ -1,5 +1,19 @@
 # Perplexity Server
 
+<div align="center">
+  <br />
+  <h1>🚨 Project Moved to Dedicated Repository 🚨</h1>
+  <p><strong>This directory was created for learning and study purposes. The standalone Perplexity Clone project has been moved to:</strong></p>
+  
+  <h3>👉 <a href="https://github.com/aryanpatel287/peplexity-clone.git">github.com/aryanpatel287/peplexity-clone</a> 👈</h3>
+
+  <a href="https://github.com/aryanpatel287/peplexity-clone.git">
+    <img src="https://img.shields.io/badge/Go%20To%20Dedicated%20Repository-FF4D4D?style=for-the-badge&logo=github&logoColor=white" alt="Go to peplexity-clone" />
+  </a>
+  <br />
+  <hr />
+</div>
+
 Backend API and socket server for the Perplexity clone application.
 
 ## API Collection and Examples
