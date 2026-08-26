@@ -1,12 +1,12 @@
 FROM node:20-alpine
 
-WORKDIR /app
+WORKDIR /app/server
 
 COPY ./package.json .
 COPY ./package-lock.json .
 
 RUN npm ci
 
-COPY ./server.js .
+COPY ./server.js .  
 
 CMD ["node", "server.js"]
