@@ -4,16 +4,12 @@ import cors from 'cors';
 const app = express();
 
 app.use(express.json());
-
+app.use(express.static('public'));
 app.use(
     cors({
         origin: 'http://localhost:5173',
     }),
 );
-
-app.get('/', (req, res) => {
-    res.send('Hello, Aryan!');
-});
 
 const users = [
     { id: 1, name: 'Aryan' },
@@ -23,6 +19,10 @@ const users = [
 
 app.get('/data', (req, res) => {
     res.status(200).json({ users });
+});
+
+app.get('*name', (req, res) => {
+    res.sendFile('index.html', { root: 'public' });
 });
 
 const PORT = process.env.PORT || 3000;
