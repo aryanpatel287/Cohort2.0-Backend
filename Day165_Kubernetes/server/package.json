@@ -1,0 +1,10 @@
+{
+    "dependencies": {
+        "express": "^5.3.0",
+        "morgan": "^1.12.1"
+    },
+    "scripts": {
+        "dev": "npx nodemon server.js"
+    },
+    "type": "module"
+}
