@@ -12,7 +12,10 @@ app.get('/', (req, res) => {
         sum += i;
     }
 
-    res.send(`<h1>Sum is ${sum}</h1>`);
+    res.status(200).json({
+        message: 'Sum of 1 to 1 billion',
+        sum: sum,
+    });
 });
 
 const PORT = process.env.PORT || 3000;

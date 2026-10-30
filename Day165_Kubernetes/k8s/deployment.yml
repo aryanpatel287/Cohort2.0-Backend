@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: express
+  name: main-server
 spec:
   replicas: 3
   selector:
     matchLabels:
-      app: express
+      app: main-server
   template:
     metadata:
       labels:
-        app: express
+        app: main-server
     spec:
       containers:
-      - name: express-container
-        image: day165_kubernetes:latest
+      - name: main-server-container
+        image: k8s_main_server:latest
         imagePullPolicy: Always
         ports:
         - containerPort: 3000

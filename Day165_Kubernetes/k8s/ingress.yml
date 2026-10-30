@@ -1,9 +1,9 @@
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
-  name: express-ingress
+  name: k8s-backend-ingress
   labels:
-    app.kubernetes.io/name: express-ingress
+    app.kubernetes.io/name: k8s-backend-ingress
 spec:
   ingressClassName: nginx
   rules:
@@ -13,6 +13,15 @@ spec:
         path: "/"
         backend:
           service:
-            name: express-service
+            name: main-server-service
             port: 
               number: 80
+  - http:
+      paths:
+        - pathType: Prefix
+          path: "/api/products"
+          backend:
+            service:
+              name: product-server-service
+              port: 
+                number: 80

@@ -1,10 +1,10 @@
 kind: Service
 apiVersion: v1
 metadata:
-  name: express-service
+  name: main-server-service
 spec:
   selector:
-    app: express
+    app: main-server
   type: ClusterIP
   ports:
   - name: http
